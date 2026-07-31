@@ -1,6 +1,6 @@
 export function Info() {
   return (
-     <section class="bg-white border-b py-8">
+    <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           Sobre nosotros
@@ -18,7 +18,8 @@ export function Info() {
                 Lorem ipsum dolor sit amet.
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
               </p>
             </a>
           </div>
@@ -40,7 +41,8 @@ export function Info() {
                 Lorem ipsum dolor sit amet.
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
               </p>
             </a>
           </div>
@@ -62,7 +64,8 @@ export function Info() {
                 Lorem ipsum dolor sit amet.
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit amet ligula.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
               </p>
             </a>
           </div>
@@ -76,5 +79,5 @@ export function Info() {
         </div>
       </div>
     </section>
-  )
+  );
 }

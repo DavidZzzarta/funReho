@@ -3,9 +3,11 @@ export function Hero() {
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <p class="uppercase tracking-loose w-full">Que tipo de necesidades tienes?</p>
+          <p class="uppercase tracking-loose w-full">
+            Que tipo de necesidades tienes?
+          </p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
-            Te ayudamos en lo que necesites 
+            Te ayudamos en lo que necesites
           </h1>
           <p class="leading-normal text-2xl mb-8">
             Con un recorrido desde <strong>2014</strong>
@@ -19,5 +21,5 @@ export function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
