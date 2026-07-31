@@ -1,5 +1,6 @@
 import { useState } from "react";
 import clsx from "clsx";
+import { Link } from "wouter";
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ export function Nav() {
         )}
       >
         <div className={clsx("pl-4", "flex", "items-center", "gap-2")}>
-          <a
+          <Link
             className={clsx(
               "toggleColour",
               "text-white",
@@ -38,14 +39,14 @@ export function Nav() {
               "text-2xl",
               "lg:text-4xl",
             )}
-            href="#"
+            href="/"
           >
             <img
               src="/icon.svg"
               alt="Icono"
               className={clsx("h-8", "w-8", "lg:h-12", "lg:w-12")}
             />
-          </a>
+          </Link>
         </div>
         <div className={clsx("block", "lg:hidden", "pr-4")}>
           <button
@@ -103,7 +104,7 @@ export function Nav() {
             )}
           >
             <li className={clsx("mr-3")}>
-              <a
+              <Link
                 className={clsx(
                   "inline-block",
                   "text-black",
@@ -113,13 +114,13 @@ export function Nav() {
                   "py-2",
                   "px-4",
                 )}
-                href="#"
+                href="/mision"
               >
                 Mision y visión
-              </a>
+              </Link>
             </li>
             <li className={clsx("mr-3")}>
-              <a
+              <Link
                 className={clsx(
                   "inline-block",
                   "text-black",
@@ -129,13 +130,13 @@ export function Nav() {
                   "py-2",
                   "px-4",
                 )}
-                href="#"
+                href="/recorrido"
               >
                 Recorrido
-              </a>
+              </Link>
             </li>
             <li className={clsx("mr-3")}>
-              <a
+              <Link
                 className={clsx(
                   "inline-block",
                   "text-black",
@@ -145,10 +146,10 @@ export function Nav() {
                   "py-2",
                   "px-4",
                 )}
-                href="#"
+                href="/plan"
               >
                 Plan de accion
-              </a>
+              </Link>
             </li>
           </ul>
           <button

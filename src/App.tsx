@@ -1,21 +1,21 @@
-import { Nav } from "./components/Nav";
-import { Hero } from "./components/Hero";
-import { Tour } from "./components/sections/Tour";
-import { Info } from "./components/sections/Info";
-import { Action } from "./components/sections/Action";
-import { Footer } from "./components/Footer";
-import { HeroGradient } from "./components/HeroGradient";
+import { Route, Switch } from "wouter";
+import { Home } from "./pages/Home";
+import { Mision } from "./pages/Mision";
+import { Recorrido } from "./pages/Recorrido";
+import { Plan } from "./pages/Plan";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <HeroGradient />
-      <Tour />
-      <Info />
-      <Action />
-      <Footer />
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/mision" component={Mision} />
+        <Route path="/recorrido" component={Recorrido} />
+        <Route path="/plan" component={Plan} />
+
+        {/* Default route in a switch */}
+        <Route>404: No such page!</Route>
+      </Switch>
     </>
   );
 }

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Link } from "wouter";
 
 function Card({
   children,
@@ -6,12 +7,14 @@ function Card({
   titulo,
   descripcion,
   imgUrl,
+  url,
 }: {
   children: React.ReactNode;
   fecha: string;
   titulo: string;
   descripcion: string;
   imgUrl?: string;
+  url?: string;
 }) {
   return (
     <div
@@ -42,8 +45,8 @@ function Card({
           />
         )}
 
-        <a
-          href="#"
+        <Link
+          href={url || "#"}
           className={clsx(
             "flex",
             "flex-wrap",
@@ -88,7 +91,7 @@ function Card({
           >
             {descripcion}
           </p>
-        </a>
+        </Link>
       </div>
 
       {children}
@@ -104,6 +107,7 @@ function Cards() {
         titulo="Mision y vision"
         descripcion="No dejamos a nadie solo con sus luchas internas y externas"
         imgUrl="/a1.png"
+        url="/mision"
       >
         <div
           className={clsx(
@@ -118,7 +122,8 @@ function Cards() {
           )}
         >
           <div className={clsx("flex", "items-center", "justify-start")}>
-            <button
+            <Link
+              href="/mision"
               className={clsx(
                 "mx-auto",
                 "lg:mx-0",
@@ -141,7 +146,7 @@ function Cards() {
               )}
             >
               Leer mas
-            </button>
+            </Link>
           </div>
         </div>
       </Card>
@@ -151,6 +156,7 @@ function Cards() {
         titulo="Plam de accion"
         descripcion="Tenemos un plan de accion completo puesto para todos los que lo necesiten."
         imgUrl="/a2.png"
+        url="/plan"
       >
         <div
           className={clsx(
@@ -165,7 +171,8 @@ function Cards() {
           )}
         >
           <div className={clsx("flex", "items-center", "justify-center")}>
-            <button
+            <Link
+              href="/plan"
               className={clsx(
                 "mx-auto",
                 "lg:mx-0",
@@ -188,7 +195,7 @@ function Cards() {
               )}
             >
               Leer mas
-            </button>
+            </Link>
           </div>
         </div>
       </Card>
@@ -212,7 +219,8 @@ function Cards() {
           )}
         >
           <div className={clsx("flex", "items-center", "justify-end")}>
-            <button
+            <Link
+              href="/recorrido"
               className={clsx(
                 "mx-auto",
                 "lg:mx-0",
@@ -235,7 +243,7 @@ function Cards() {
               )}
             >
               Leer mas
-            </button>
+            </Link>
           </div>
         </div>
       </Card>
