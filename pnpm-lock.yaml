@@ -22,6 +22,9 @@ importers:
       react-dom:
         specifier: ^19.2.7
         version: 19.2.8(react@19.2.8)
+      react-social-icons:
+        specifier: ^6.26.0
+        version: 6.26.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -52,6 +55,13 @@ importers:
         version: 8.1.5(@types/node@24.13.3)(jiti@2.7.0)
 
 packages:
+  "@babel/runtime@7.29.7":
+    resolution:
+      {
+        integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==,
+      }
+    engines: { node: ">=6.9.0" }
+
   "@emnapi/core@1.11.1":
     resolution:
       {
@@ -977,6 +987,15 @@ packages:
     peerDependencies:
       react: ^19.2.8
 
+  react-social-icons@6.26.0:
+    resolution:
+      {
+        integrity: sha512-RCtYQ/6s8BLdcdOqrPYqavwHe8KbvvAmTFp384N4IkZF8wgjMivSWNtelALFS1QYGB9eYDZqi1s0CfW834corQ==,
+      }
+    peerDependencies:
+      react: 16.x.x || 17.x.x || 18.x.x || 19.x.x
+      react-dom: 16.x.x || 17.x.x || 18.x.x || 19.x.x
+
   react@19.2.8:
     resolution:
       {
@@ -1092,6 +1111,8 @@ packages:
         optional: true
 
 snapshots:
+  "@babel/runtime@7.29.7": {}
+
   "@emnapi/core@1.11.1":
     dependencies:
       "@emnapi/wasi-threads": 1.2.2
@@ -1502,6 +1523,12 @@ snapshots:
     dependencies:
       react: 19.2.8
       scheduler: 0.27.0
+
+  react-social-icons@6.26.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+    dependencies:
+      "@babel/runtime": 7.29.7
+      react: 19.2.8
+      react-dom: 19.2.8(react@19.2.8)
 
   react@19.2.8: {}
 
