@@ -1,6 +1,9 @@
+import { useState } from "react";
 import clsx from "clsx";
 
 export function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
       className={clsx(
@@ -46,7 +49,7 @@ export function Nav() {
         </div>
         <div className={clsx("block", "lg:hidden", "pr-4")}>
           <button
-            id="nav-toggle"
+            onClick={() => setIsOpen(!isOpen)}
             className={clsx(
               "flex",
               "items-center",
@@ -79,7 +82,7 @@ export function Nav() {
             "lg:flex",
             "lg:items-center",
             "lg:w-auto",
-            "hidden",
+            isOpen ? "block" : "hidden",
             "mt-2",
             "lg:mt-0",
             "bg-white",
@@ -89,7 +92,6 @@ export function Nav() {
             "lg:p-0",
             "z-20",
           )}
-          id="nav-content"
         >
           <ul
             className={clsx(
@@ -104,7 +106,8 @@ export function Nav() {
               <a
                 className={clsx(
                   "inline-block",
-                  "text-white",
+                  "text-black",
+                  "lg:text-white",
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
@@ -119,7 +122,8 @@ export function Nav() {
               <a
                 className={clsx(
                   "inline-block",
-                  "text-white",
+                  "text-black",
+                  "lg:text-white",
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
@@ -134,7 +138,8 @@ export function Nav() {
               <a
                 className={clsx(
                   "inline-block",
-                  "text-white",
+                  "text-black",
+                  "lg:text-white",
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
