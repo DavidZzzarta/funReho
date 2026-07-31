@@ -12,21 +12,20 @@ export function Info() {
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
               <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
+                9 de agosto del 2020
               </p>
               <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
+                Mision y vision
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                No dejamos a nadie solo con sus luchas internas y externas
               </p>
             </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-start">
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
+                Leer mas
               </button>
             </div>
           </div>
@@ -35,21 +34,21 @@ export function Info() {
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
               <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
+                16 mayo, 2022
               </p>
               <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
+                Plam de accion
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Tenemos un plan de accion completo puesto para todos los que lo
+                necesiten.
               </p>
             </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-center">
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
+                Leer mas
               </button>
             </div>
           </div>
@@ -58,21 +57,21 @@ export function Info() {
           <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
             <a href="#" class="flex flex-wrap no-underline hover:no-underline">
               <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-                xGETTING STARTED
+                16 mayo, 2014
               </p>
               <div class="w-full font-bold text-xl text-gray-800 px-6">
-                Lorem ipsum dolor sit amet.
+                Nuestro recorrido
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                at ipsum eu nunc commodo posuere et sit amet ligula.
+                Desde 2014 hemos llevado ayudas de forma voluntaria a ninos,
+                familias, y todo tipo de personas desde Ibague, Sibate, y Bogota
               </p>
             </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
             <div class="flex items-center justify-end">
               <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                Action
+                Leer mas
               </button>
             </div>
           </div>

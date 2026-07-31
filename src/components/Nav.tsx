@@ -1,11 +1,15 @@
-import { Handshake } from "lucide-react";
 import clsx from "clsx";
 
 export function Nav() {
   return (
     <nav
-      id="header"
-      className={clsx("fixed", "w-full", "z-30", "top-0", "text-white")}
+      className={clsx(
+        "w-full",
+        "z-30",
+        "top-0",
+        "text-white",
+        "backdrop-blur-md",
+      )}
     >
       <div
         className={clsx(
@@ -33,8 +37,11 @@ export function Nav() {
             )}
             href="#"
           >
-            <Handshake />
-            <span className={clsx("ml-2")}>Fundacion Rehoboth</span>
+            <img
+              src="/icon.svg"
+              alt="Icono"
+              className="h-8 w-8 lg:h-12 lg:w-12"
+            />
           </a>
         </div>
         <div className={clsx("block", "lg:hidden", "pr-4")}>
@@ -72,24 +79,32 @@ export function Nav() {
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
             <li class="mr-3">
               <a
-                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
                 href="#"
               >
-                Galeria
+                Mision y visión
               </a>
             </li>
             <li class="mr-3">
               <a
-                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
                 href="#"
               >
                 Recorrido
               </a>
             </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
+                href="#"
+              >
+                Plan de accion
+              </a>
+            </li>
           </ul>
           <button
             id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            class="mx-auto lg:mx-0 cursor-pointer bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
           >
             Contacto
           </button>
