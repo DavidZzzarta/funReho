@@ -40,7 +40,7 @@ export function Nav() {
             <img
               src="/icon.svg"
               alt="Icono"
-              className="h-8 w-8 lg:h-12 lg:w-12"
+              className={clsx("h-8", "w-8", "lg:h-12", "lg:w-12")}
             />
           </a>
         </div>
@@ -63,7 +63,7 @@ export function Nav() {
             )}
           >
             <svg
-              class="fill-current h-6 w-6"
+              className={clsx("fill-current", "h-6", "w-6")}
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -73,29 +73,73 @@ export function Nav() {
           </button>
         </div>
         <div
-          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+          className={clsx(
+            "w-full",
+            "flex-grow",
+            "lg:flex",
+            "lg:items-center",
+            "lg:w-auto",
+            "hidden",
+            "mt-2",
+            "lg:mt-0",
+            "bg-white",
+            "lg:bg-transparent",
+            "text-black",
+            "p-4",
+            "lg:p-0",
+            "z-20",
+          )}
           id="nav-content"
         >
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
+          <ul
+            className={clsx(
+              "list-reset",
+              "lg:flex",
+              "justify-end",
+              "flex-1",
+              "items-center",
+            )}
+          >
+            <li className={clsx("mr-3")}>
               <a
-                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
+                className={clsx(
+                  "inline-block",
+                  "text-white",
+                  "no-underline",
+                  "hover:text-underline",
+                  "py-2",
+                  "px-4",
+                )}
                 href="#"
               >
                 Mision y visión
               </a>
             </li>
-            <li class="mr-3">
+            <li className={clsx("mr-3")}>
               <a
-                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
+                className={clsx(
+                  "inline-block",
+                  "text-white",
+                  "no-underline",
+                  "hover:text-underline",
+                  "py-2",
+                  "px-4",
+                )}
                 href="#"
               >
                 Recorrido
               </a>
             </li>
-            <li class="mr-3">
+            <li className={clsx("mr-3")}>
               <a
-                class="inline-block text-white no-underline hover:text-underline py-2 px-4"
+                className={clsx(
+                  "inline-block",
+                  "text-white",
+                  "no-underline",
+                  "hover:text-underline",
+                  "py-2",
+                  "px-4",
+                )}
                 href="#"
               >
                 Plan de accion
@@ -104,13 +148,42 @@ export function Nav() {
           </ul>
           <button
             id="navAction"
-            class="mx-auto lg:mx-0 cursor-pointer bg-white text-black font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            className={clsx(
+              "mx-auto",
+              "lg:mx-0",
+              "cursor-pointer",
+              "bg-white",
+              "text-black",
+              "font-bold",
+              "rounded-full",
+              "mt-4",
+              "lg:mt-0",
+              "py-4",
+              "px-8",
+              "shadow",
+              "opacity-75",
+              "focus:outline-none",
+              "focus:shadow-outline",
+              "transform",
+              "transition",
+              "hover:scale-105",
+              "duration-300",
+              "ease-in-out",
+            )}
           >
             Contacto
           </button>
         </div>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      <hr
+        className={clsx(
+          "border-b",
+          "border-gray-100",
+          "opacity-25",
+          "my-0",
+          "py-0",
+        )}
+      />
     </nav>
   );
 }
