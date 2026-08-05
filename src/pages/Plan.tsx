@@ -54,7 +54,7 @@ function Content() {
         apoyo psicológico en tiempo real a personas en crisis, ayudándolas a
         estabilizarse y reorientar su realidad.
       </Typography>
-<Icons />
+      <Icons />
 
       <Typography type="h1">Apoyo integral</Typography>
       <Typography>
@@ -154,32 +154,23 @@ function Content() {
 function List() {
   return (
     <section
-      className={clsx(
-        "container",
-        "py-6",
-        "relative",
-        "z-10",
-        "max-w-4xl",
-        "mx-auto",
-      )}
+      className={clsx("container", "relative", "z-10", "max-w-4xl", "mx-auto")}
     >
       <h2
         className={clsx(
           "w-full",
-          "my-2",
           "text-5xl",
           "font-bold",
           "leading-tight",
           "text-center",
-          "text-white",
           "mt-32",
         )}
       >
         Nuestros proyectos
       </h2>
-      <Link className="mt[-200px] pt-12">Cuidando tu salud mental</Link>
+      <Link className="mt[-200px] pt-2">Cuidando tu salud mental</Link>
       <br />
-      <Link className="mt[-200px] pt-12">United Academy</Link>
+      <Link className="mt[-200px] pt-2">United Academy</Link>
     </section>
   );
 }
@@ -192,13 +183,10 @@ export function Plan() {
       <h2
         className={clsx(
           "w-full",
-          "my-2",
-          "text-5xl",
-          "font-bold",
+          "text-xl",
           "leading-tight",
           "text-center",
           "text-white",
-          "mt-32",
         )}
       >
         Proyecto
@@ -206,13 +194,11 @@ export function Plan() {
       <h2
         className={clsx(
           "w-full",
-          "my-2",
           "text-5xl",
           "font-bold",
           "leading-tight",
           "text-center",
           "text-white",
-          "mt-32",
         )}
       >
         Cuidando tu salud mental

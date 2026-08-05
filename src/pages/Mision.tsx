@@ -65,7 +65,7 @@ function Content() {
       </div>
       <Basic />
       <Typography type="h1">Misión de la Fundación Rehobot</Typography>
-<Separator />
+      <Separator />
       <Typography>
         Somos una organización sin ánimo de lucro comprometida con la **salud
         mental integral** de la población colombiana, especialmente de niños,
