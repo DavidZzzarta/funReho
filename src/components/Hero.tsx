@@ -7,7 +7,9 @@ function Contenido() {
       className={clsx(
         "flex",
         "flex-col",
-        "w-full",
+        "w-full", // 1. Ocupa todo el ancho base en celulares
+        "max-w-9/10", // 2. Limita el ancho en celu (320px) si quieres que se vea angosto
+        "md:max-w-xl", // 3. Aplica el ancho máximo original solo en pantallas medianas/grandes
         "md:w-2/5",
         "justify-center",
         "items-start",
@@ -18,10 +20,18 @@ function Contenido() {
       <p className={clsx("uppercase", "tracking-loose", "w-full")}>
         Queremos escucharte
       </p>
-      <h1 className={clsx("my-4", "text-4xl", "font-bold", "leading-tight")}>
+      <h1
+        className={clsx(
+          "my-4",
+          "md:text-4xl",
+          "font-bold",
+          "leading-tight",
+          "text-3xl",
+        )}
+      >
         Trabajamos para disminuir las cifras de suicidios
       </h1>
-      <p className={clsx("leading-normal", "text-2xl", "mb-2")}>
+      <p className={clsx("leading-normal", "text-xl", "mb-2", "md:text-2xl")}>
         Con un recorrido desde{" "}
         <strong
           className={clsx(
@@ -33,6 +43,7 @@ function Contenido() {
           2014
         </strong>
       </p>
+
       <p className={clsx("text-xs", "my-4")}>
         Si repararamos familias, reparamos la sociedad
       </p>
