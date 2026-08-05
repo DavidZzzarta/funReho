@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Link } from "wouter";
 
+
 function Card({
   children,
   fecha,
@@ -31,7 +32,6 @@ function Card({
       <div
         className={clsx(
           "flex-1",
-          "bg-white",
           "rounded",
           "overflow-hidden",
           "shadow",
@@ -58,7 +58,6 @@ function Card({
           <p
             className={clsx(
               "w-full",
-              "text-gray-600",
               "text-xs",
               "md:text-sm",
               "px-6",
@@ -113,7 +112,6 @@ function Cards() {
           className={clsx(
             "flex-none",
             "mt-auto",
-            "bg-white",
             "rounded-b",
             "rounded-t-none",
             "overflow-hidden",
@@ -162,7 +160,6 @@ function Cards() {
           className={clsx(
             "flex-none",
             "mt-auto",
-            "bg-white",
             "rounded-b",
             "rounded-t-none",
             "overflow-hidden",
@@ -210,7 +207,6 @@ function Cards() {
           className={clsx(
             "flex-none",
             "mt-auto",
-            "bg-white",
             "rounded-b",
             "rounded-t-none",
             "overflow-hidden",
@@ -253,7 +249,7 @@ function Cards() {
 
 export function Info() {
   return (
-    <section className={clsx("bg-white", "border-b", "py-8")}>
+    <section className={clsx("border-b", "py-8")}>
       <div
         className={clsx(
           "container",
@@ -272,7 +268,6 @@ export function Info() {
             "font-bold",
             "leading-tight",
             "text-center",
-            "text-gray-800",
           )}
         >
           Sobre nosotros

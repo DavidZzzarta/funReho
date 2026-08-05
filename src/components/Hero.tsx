@@ -50,7 +50,7 @@ export function Hero() {
 
         </div>
         <div className={clsx("w-full", "md:w-3/5", "py-6", "text-center")}>
-          <img className={clsx("w-full", "md:w-4/5", "z-50")} src="/hero.png" />
+          <img className={clsx("w-full", "md:w-4/5", "z-50")} src="/hero2.png" />
         </div>
       </div>
     </div>

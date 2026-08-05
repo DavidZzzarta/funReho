@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 export function Tour() {
   return (
-    <section className={clsx("bg-white", "border-b", "py-8")}>
+    <section className={clsx( "border-b", "py-8")}>
       <div className={clsx("container", "max-w-5xl", "mx-auto", "m-8")}>
         <h2
           className={clsx(
@@ -12,7 +12,6 @@ export function Tour() {
             "font-bold",
             "leading-tight",
             "text-center",
-            "text-gray-800",
           )}
         >
           Que hacemos?
@@ -36,7 +35,6 @@ export function Tour() {
             <h3
               className={clsx(
                 "text-3xl",
-                "text-gray-800",
                 "font-bold",
                 "leading-none",
                 "mb-3",
@@ -44,7 +42,7 @@ export function Tour() {
             >
               Ayudamos a los mas necesitados
             </h3>
-            <p className={clsx("text-gray-600", "mb-8")}>
+            <p className={clsx("mb-8")}>
               Tenemos el proposito de ayudar familias, personas y corazones que
               mas lo necesitan en nuestra sociedad
               <br />
@@ -94,7 +92,6 @@ export function Tour() {
               <h3
                 className={clsx(
                   "text-3xl",
-                  "text-gray-800",
                   "font-bold",
                   "leading-none",
                   "mb-3",
@@ -102,7 +99,7 @@ export function Tour() {
               >
                 Te gustaria ayudar de alguna manera?
               </h3>
-              <p className={clsx("text-gray-600", "mb-8")}>
+              <p className={clsx("mb-8")}>
                 Facilitamos la conexión entre personas que necesitan ayuda y
                 voluntarios dispuestos a colaborar.
                 <br />
