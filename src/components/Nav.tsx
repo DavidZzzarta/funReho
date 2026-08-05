@@ -1,6 +1,8 @@
 import { useState } from "react";
 import clsx from "clsx";
 import { Link } from "wouter";
+import {Button} from "@heroui/react";
+import { Menu } from 'lucide-react'
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +13,8 @@ export function Nav() {
         "w-full",
         "z-30",
         "top-0",
-        "text-white",
         "backdrop-blur-md",
+        "fixed"
       )}
     >
       <div
@@ -32,7 +34,7 @@ export function Nav() {
           <Link
             className={clsx(
               "toggleColour",
-              "text-white",
+
               "no-underline",
               "hover:no-underline",
               "font-bold",
@@ -49,32 +51,13 @@ export function Nav() {
           </Link>
         </div>
         <div className={clsx("block", "lg:hidden", "pr-4")}>
-          <button
+          <Button
+            isIconOnly
+            variant="ghost"
             onClick={() => setIsOpen(!isOpen)}
-            className={clsx(
-              "flex",
-              "items-center",
-              "p-1",
-              "text-pink-800",
-              "hover:text-gray-900",
-              "focus:outline-none",
-              "focus:shadow-outline",
-              "transform",
-              "transition",
-              "hover:scale-105",
-              "duration-300",
-              "ease-in-out",
-            )}
           >
-            <svg
-              className={clsx("fill-current", "h-6", "w-6")}
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
+            <Menu />
+          </Button>
         </div>
         <div
           className={clsx(
@@ -88,7 +71,7 @@ export function Nav() {
             "lg:mt-0",
             "bg-white",
             "lg:bg-transparent",
-            "text-black",
+
             "p-4",
             "lg:p-0",
             "z-20",
@@ -107,8 +90,6 @@ export function Nav() {
               <Link
                 className={clsx(
                   "inline-block",
-                  "text-black",
-                  "lg:text-white",
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
@@ -123,8 +104,6 @@ export function Nav() {
               <Link
                 className={clsx(
                   "inline-block",
-                  "text-black",
-                  "lg:text-white",
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
@@ -139,8 +118,7 @@ export function Nav() {
               <Link
                 className={clsx(
                   "inline-block",
-                  "text-black",
-                  "lg:text-white",
+
                   "no-underline",
                   "hover:text-underline",
                   "py-2",
@@ -152,33 +130,18 @@ export function Nav() {
               </Link>
             </li>
           </ul>
-          <button
+          <Button
             id="navAction"
             className={clsx(
               "mx-auto",
               "lg:mx-0",
-              "cursor-pointer",
-              "bg-white",
-              "text-black",
-              "font-bold",
-              "rounded-full",
               "mt-4",
               "lg:mt-0",
-              "py-4",
-              "px-8",
-              "shadow",
-              "opacity-75",
-              "focus:outline-none",
-              "focus:shadow-outline",
-              "transform",
-              "transition",
-              "hover:scale-105",
-              "duration-300",
-              "ease-in-out",
             )}
+            size="lg"
           >
             Contacto
-          </button>
+          </Button>
         </div>
       </div>
       <hr

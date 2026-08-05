@@ -1,6 +1,5 @@
 import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
-import { HeroGradient } from "../components/HeroGradient";
 import { Tour } from "../components/sections/Tour";
 import { Info } from "../components/sections/Info";
 import { Action } from "../components/sections/Action";
@@ -11,7 +10,7 @@ export function Home() {
     <>
       <Nav />
       <Hero />
-      <HeroGradient />
+
       <Tour />
       <Info />
       <Action />

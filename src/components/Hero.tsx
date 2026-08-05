@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Button } from "@heroui/react";
 
 export function Hero() {
   return (
@@ -39,31 +40,14 @@ export function Hero() {
             Con un recorrido desde{" "}
             <strong className={clsx("underline")}>2014</strong>
           </p>
-          <small>Si repararamos familias, reparamos la sociedad</small>
-          <button
-            className={clsx(
-              "mx-auto",
-              "lg:mx-0",
-              "hover:underline",
-              "bg-white",
-              "text-gray-800",
-              "font-bold",
-              "rounded-full",
-              "my-6",
-              "py-4",
-              "px-8",
-              "shadow-lg",
-              "focus:outline-none",
-              "focus:shadow-outline",
-              "transform",
-              "transition",
-              "hover:scale-105",
-              "duration-300",
-              "ease-in-out",
-            )}
-          >
+          <p className={clsx("text-xs", "my-4")}>Si repararamos familias, reparamos la sociedad</p>
+
+
+          <Button size="lg">
             Conoce más
-          </button>
+          </Button>
+
+
         </div>
         <div className={clsx("w-full", "md:w-3/5", "py-6", "text-center")}>
           <img className={clsx("w-full", "md:w-4/5", "z-50")} src="/hero.png" />
