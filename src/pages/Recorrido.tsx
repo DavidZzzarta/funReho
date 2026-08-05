@@ -7,11 +7,14 @@ export function Recorrido() {
   return (
     <>
       <Nav />
+
       <SubHero
         title="Recorrido"
         subtitle="Nuestro recorrido es ayudar a las personas que lo necesitan"
       />
+
       <Camino />
+
       <Footer />
     </>
   );

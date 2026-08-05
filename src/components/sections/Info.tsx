@@ -16,13 +16,13 @@ export function OurCard({
   url: string;
 }) {
   return (
-    <Card className={clsx("gap-2")}>
+    <Card className={clsx("gap-2 w-full max-w-[376px] md:max-w-none")}>
       <img
         alt="Indie Hackers community"
         className={clsx(
           "pointer-events-none",
           "aspect-square",
-          "w-94",
+          "w-full", // Cambiado de w-94 a w-full para que se adapte al Card
           "rounded-2xl",
           "object-cover",
           "select-none",

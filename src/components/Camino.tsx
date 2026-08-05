@@ -45,8 +45,9 @@ function Fecha({
 }
 
 export function Camino() {
+  // <div className={clsx("flex max-w-4/5 md:max-w-4xl flex-col gap-4 mx-auto pb-30")}>
   return (
-    <div className={clsx("max-w-5xl", "mx-auto", "mb-24")}>
+    <div className={clsx("max-w-4/5", "xl:max-w-4xl", "mx-auto", "mb-24")}>
       <Fecha
         fecha="12 de Mayo del 2016"
         descripcion="Ayudas comunitarias"
