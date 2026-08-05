@@ -1,123 +1,49 @@
 import clsx from "clsx";
-import { Link } from "wouter";
-import { Button } from "@heroui/react";
-import { ChevronRight } from "lucide-react";
-import { Separator } from '@heroui/react';
+import {  Card, Link as LinkHeroUI } from "@heroui/react";
 
-function Card({
-  fecha,
-  titulo,
-  descripcion,
-  imgUrl,
-  url,
-}: {
-  fecha: string;
-  titulo: string;
-  descripcion: string;
-  imgUrl?: string;
-  url?: string;
-}) {
+export function OurCard({ fecha, titulo, descripcion, imgUrl, url }: { fecha: string; titulo: string; descripcion: string; imgUrl: string; url: string }) {
   return (
-    <div
-      className={clsx(
-        "w-full",
-        "md:w-1/3",
-        "p-6",
-        "flex",
-        "flex-col",
-        "flex-grow",
-        "flex-shrink",
-        "shadow-lg",
-        "shadow-gray-800/40",
-        "rounded-3xl",
-        'mb-14'
-      )}
-    >
-      <div
-        className={clsx(
-          "flex-1",
-          "rounded",
-          "overflow-hidden",
-          "shadow",
-        )}
-      >
-        {imgUrl && (
-          <img
-            src={imgUrl}
-            alt={titulo}
-            className={clsx("w-full", "h-84", "object-cover", "rounded-t-3xl")}
-          />
-        )}
+      <Card className={clsx('gap-2')}>
+        <img
+          alt="Indie Hackers community"
+          className={clsx('pointer-events-none', 'aspect-square', 'w-94', 'rounded-2xl', 'object-cover', 'select-none')}
+          loading="lazy"
+          src={imgUrl}
+        />
+        <Card.Header className="gap-3">
 
-        <Link
-          href={url || "#"}
-          className={clsx(
-            "flex",
-            "flex-wrap",
-            "no-underline",
-            "hover:no-underline",
-            "py-6",
-          )}
-        >
-          <p
-            className={clsx(
-              "w-full",
-              "text-xs",
-              "md:text-sm",
-              "px-6",
-            )}
-          >
-            {fecha}
-          </p>
+                <div className={clsx('flex', 'flex-col', 'gap-1')}>
+                  <span className={clsx('text-xs', 'font-medium', 'text-muted', 'uppercase')}>{fecha}</span>
+                  <Card.Title className={clsx('pe-8', 'text-xl')}>
+                    {titulo}
+                  </Card.Title>
+                  <Card.Description className={clsx('text-xs', 'sm:text-sm')}>
+                    {descripcion}
+                  </Card.Description>
+                </div>
+              </Card.Header>
 
-          <h3
-            className={clsx(
-              "w-full",
-              "font-bold",
-              "text-xl",
-              "px-6",
-              "mt-2",
-            )}
-          >
-            {titulo}
-          </h3>
+              <Card.Footer className={clsx('z-10', 'mt-auto', 'flex', 'items-end', 'justify-end', 'mx-2')}>
 
-          <p
-            className={clsx(
-              "text-base",
-              "px-6",
-              "mt-3",
-              "mb-5",
-            )}
-          >
-            {descripcion}
-          </p>
-        </Link>
-      </div>
-
-      <Separator variant="secondary" className="my-4" />
-
-      <div className={clsx("flex", "justify-center")}>
-        <Button variant="secondary" size="lg">
-          <ChevronRight />
-          Leer más
-        </Button>
-      </div>
-    </div>
+              <LinkHeroUI aria-label="Go to settings" href={url} rel="noopener noreferrer">
+                  Ver más
+                </LinkHeroUI>
+            </Card.Footer>
+      </Card>
   );
 }
 
 function Cards() {
   return (
-    <>
-      <Card
+    <div className={clsx('grid', 'grid-cols-1', 'md:grid-cols-3', 'gap-12', 'mx-auto', 'max-w-7xl')}>
+      <OurCard
         fecha="9 de agosto del 2020"
         titulo="Mision y vision"
         descripcion="No dejamos a nadie solo con sus luchas internas y externas"
         imgUrl="/a1.png"
         url="/mision"
       />
-      <Card
+      <OurCard
         fecha="16 mayo, 2022"
         titulo="Plam de accion"
         descripcion="Tenemos un plan de accion completo puesto para todos los que lo necesiten."
@@ -125,18 +51,20 @@ function Cards() {
         url="/plan"
       />
 
-      <Card
+      <OurCard
         fecha="16 mayo, 2014"
         titulo="Nuestro recorrido"
         descripcion="Desde 2014 hemos llevado ayudas de forma voluntaria a ninos, familias, y todo tipo de personas desde Ibague, Sibate, y Bogota"
         imgUrl="/a3.png"
-      />
-    </>
+        url="/recorrido"
+        />
+    </div>
   );
 }
 
 export function Info() {
   return (
+    <>
     <section className={clsx("border-b", "py-8")}>
       <div
         className={clsx(
@@ -178,5 +106,7 @@ export function Info() {
         <Cards />
       </div>
     </section>
+    </>
+
   );
 }

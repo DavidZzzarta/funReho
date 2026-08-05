@@ -8,16 +8,15 @@ import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 function Icons() {
   return (
     <div className={clsx("flex", "justify-center", "gap-18", "mt-8")}>
-      <Rocket className={clsx("w-12", "h-12")} color="#525252" />
-      <HeartPulse className={clsx("w-12", "h-12")} color="#525252" />
-      <TableCellsMerge className={clsx("w-12", "h-12")} color="#525252" />
+      <Rocket className={clsx("w-12", "h-12")} color="#919191" />
+      <HeartPulse className={clsx("w-12", "h-12")} color="#919191" />
+      <TableCellsMerge className={clsx("w-12", "h-12")} color="#919191" />
     </div>
   );
 }
 
 function Content() {
   return (
-    <div className={clsx("bg-white")}>
       <div
         className={clsx(
           "max-w-4xl",
@@ -27,7 +26,6 @@ function Content() {
           "rounded-lg",
           "shadow-lg",
           "p-6",
-          "text-black",
         )}
       >
         <p>
@@ -83,12 +81,11 @@ function Content() {
           persona de entre 5 y 17 años. Según cifras oficiales del DANE.
         </p>
         <br />
-        <p className="text-sm italic text-center">
+        <p className={clsx('text-sm', 'italic', 'text-center')}>
           Cada 40 segundos se suicida una persona en el mundo. Según cifras
           oficiales de la OMS.
         </p>
       </div>
-    </div>
   );
 }
 

@@ -7,16 +7,15 @@ import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 function Icons() {
   return (
     <div className={clsx("flex", "justify-center", "gap-18", "mt-8")}>
-      <Rocket className={clsx("w-12", "h-12")} color="#525252" />
-      <HeartPulse className={clsx("w-12", "h-12")} color="#525252" />
-      <TableCellsMerge className={clsx("w-12", "h-12")} color="#525252" />
+      <Rocket className={clsx("w-12", "h-12")} color="#919191" />
+      <HeartPulse className={clsx("w-12", "h-12")} color="#919191" />
+      <TableCellsMerge className={clsx("w-12", "h-12")} color="#919191" />
     </div>
   );
 }
 
 function Content() {
   return (
-    <div className={clsx("bg-white")}>
       <div
         className={clsx(
           "max-w-4xl",
@@ -26,7 +25,6 @@ function Content() {
           "rounded-lg",
           "shadow-lg",
           "p-6",
-          "text-black",
         )}
       >
         <p className={clsx("text-2xl")}>Estamos convencidos de:</p>
@@ -39,7 +37,6 @@ function Content() {
 
         <p
           className={clsx(
-            "text-gray-600",
             "text-sm",
             "py-5",
             "px-10",
@@ -351,7 +348,6 @@ function Content() {
         </p>
         <br />
       </div>
-    </div>
   );
 }
 

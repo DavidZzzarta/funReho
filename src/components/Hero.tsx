@@ -1,9 +1,34 @@
 import clsx from "clsx";
 import { Button } from "@heroui/react";
 
+
+
+
+
 export function Hero() {
   return (
-    <div>
+    <div className={clsx('w-full', 'overflow-hidden', 'flex', 'items-center', 'justify-center')}>
+      {/* Contenedor del patrón de cuadros */}
+      <div 
+  className={clsx(
+    'absolute inset-0 -z-10 h-[600px] w-full',
+    // Creamos las líneas usando solo transparencias (así no alteramos tu fondo)
+    'bg-[linear-gradient(to_right,rgba(51,65,85,0.25)_1px,transparent_1px),linear-gradient(to_bottom,rgba(51,65,85,0.25)_1px,transparent_1px)]',
+    'bg-[size:4rem_4rem]'
+  )}
+  style={{
+    // La máscara desvanece SOLO las líneas que acabamos de pintar arriba
+    maskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
+    WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
+  }}
+/>
+
+
+
+
+
+
+
       <div className={clsx("absolute", "top-0", "left-0", "w-full", "h-full")}>
   <img 
     className={clsx(
