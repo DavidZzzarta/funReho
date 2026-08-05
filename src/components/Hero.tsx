@@ -3,7 +3,13 @@ import { Button } from "@heroui/react";
 
 export function Hero() {
   return (
-    <div className={clsx("pt-24")}>
+    <div>
+      <div className={clsx("absolute", "top-0", "left-0", "w-full", "h-full")}>
+  <img className={clsx("w-full", "h-full", "object-cover", "object-bottom")} src="/bg-kids.png" />
+</div>
+
+
+
       <div
         className={clsx(
           "container",
@@ -14,6 +20,7 @@ export function Hero() {
           "flex-col",
           "md:flex-row",
           "items-center",
+          "h-screen"
         )}
       >
         <div
@@ -53,6 +60,7 @@ export function Hero() {
           <img className={clsx("w-full", "md:w-4/5", "z-50")} src="/hero2.png" />
         </div>
       </div>
+      
     </div>
   );
 }
