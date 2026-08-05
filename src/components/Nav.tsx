@@ -104,7 +104,7 @@ export function Nav() {
             </li>
             <li>
               <Link href="/plan">
-                Plan de accion
+                Nuestros proyectos
                 <Link.Icon />
               </Link>
             </li>
