@@ -10,16 +10,18 @@ export function Nav() {
 
   return (
     <nav
-      className={clsx(
-        "w-full",
-        "z-30",
-        "top-0",
-        "backdrop-blur-md",
-        "bg-black/70",
-        "p-3",
-        "fixed",
-      )}
+      className={clsx("w-full", "z-30", "top-0", "bg-black/90", "p-3", "fixed")}
     >
+      <div
+        onClick={() => setIsOpen(false)} // Cierra el menú al hacer clic afuera
+        className={clsx(
+          "fixed inset-0 bg-black/20 backdrop-blur-sm transition-opacity duration-300 z-10",
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none",
+          "lg:hidden", // Se oculta por completo en computadoras
+        )}
+      />
       <div
         className={clsx(
           "w-full",
@@ -37,7 +39,6 @@ export function Nav() {
           <Link
             className={clsx(
               "toggleColour",
-
               "no-underline",
               "hover:no-underline",
               "font-bold",
@@ -80,21 +81,33 @@ export function Nav() {
           <ul
             className={clsx(
               "list-reset",
-              "lg:flex",
-              "justify-end",
-              "flex-1",
-              "items-center",
-              "gap-8",
+              "flex", // Activa flexbox en celulares por defecto
+              "flex-col", // Alinea los elementos en columna para celular
+              "gap-4", // Añade espacio vertical en celular
+              "items-center", // Centra los elementos horizontalmente en celular
+              "lg:flex-row", // Cambia a fila en pantallas grandes
+              "lg:justify-end", // Alinea a la derecha en pantallas grandes
+              "lg:flex-1", // Mantiene el crecimiento en pantallas grandes
+              "lg:gap-8", // Espaciado horizontal más grande en pantallas grandes
             )}
           >
             <li>
-              <Link href="/mision">Mision y visión</Link>
+              <Link href="/mision">
+                Mision y visión
+                <Link.Icon />
+              </Link>
             </li>
             <li>
-              <Link href="/recorrido">Recorrido</Link>
+              <Link href="/recorrido">
+                Recorrido
+                <Link.Icon />
+              </Link>
             </li>
             <li>
-              <Link href="/plan">Plan de accion</Link>
+              <Link href="/plan">
+                Plan de accion
+                <Link.Icon />
+              </Link>
             </li>
             <li>
               <Contact />

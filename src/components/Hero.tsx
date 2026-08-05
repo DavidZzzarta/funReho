@@ -47,7 +47,7 @@ export function Hero() {
           "flex",
           "flex-wrap",
           "flex-col",
-          
+
           "md:flex-row",
           "items-center",
           "h-screen",

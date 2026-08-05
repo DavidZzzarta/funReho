@@ -1,8 +1,10 @@
 import clsx from "clsx";
+import { Link } from "@heroui/react";
+import OurSperator from "../OurSeparator";
 
 export function Tour() {
   return (
-    <section className={clsx("border-b", "py-8")}>
+    <section className={clsx("border-b", "py-8", "mt-[10rem]")}>
       <div className={clsx("container", "max-w-5xl", "mx-auto", "m-8")}>
         <h2
           className={clsx(
@@ -16,6 +18,7 @@ export function Tour() {
         >
           Que hacemos?
         </h2>
+        <OurSperator />
         <div className={clsx("w-full", "mb-4")}>
           <div
             className={clsx(
@@ -85,12 +88,13 @@ export function Tour() {
                 voluntarios dispuestos a colaborar.
                 <br />
                 <br />
-                <a
+                <Link
                   className={clsx("text-pink-500", "underline")}
-                  href="https://undraw.co/"
+                  href="/recorrido"
                 >
-                  Contactanos
-                </a>
+                  Ver nuestra trayectoria completa
+                  <Link.Icon />
+                </Link>
               </p>
             </div>
           </div>

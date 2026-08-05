@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { Card, Link as LinkHeroUI } from "@heroui/react";
+import OurSperator from "../OurSeparator";
 
 export function OurCard({
   fecha,
@@ -112,7 +113,7 @@ function Cards() {
 export function Info() {
   return (
     <>
-      <section className={clsx("border-b", "py-8")}>
+      <section className={clsx("border-b", "py-8", "my-12")}>
         <div
           className={clsx(
             "container",
@@ -135,6 +136,7 @@ export function Info() {
           >
             Sobre nosotros
           </h2>
+          <OurSperator />
           <div className={clsx("w-full", "mb-4")}>
             <div
               className={clsx(

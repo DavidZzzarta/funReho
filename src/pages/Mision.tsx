@@ -5,21 +5,27 @@ import { Separator } from "@heroui/react";
 import clsx from "clsx";
 import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 
-import {Surface} from "@heroui/react";
+import { Surface } from "@heroui/react";
 
 import { Typography } from "@heroui/react";
 
+import OurSeparator from "../components/OurSeparator";
+
 export function Basic() {
   return (
-    <Surface className="flex min-w-[320px] flex-col gap-3 rounded-3xl p-6" variant="tertiary">
-      
+    <Surface
+      className="flex min-w-[320px] flex-col gap-3 rounded-3xl p-6"
+      variant="tertiary"
+    >
       <p className="text-sm text-muted">
-        La Fundación Rehobot en articulación con La Policía de Infancia y adolescencia, inicia su recorrido por las diferentes instituciones académicas del municipio de Soacha Cundinamarca. Para implementar el plan de acción denominado CUIDANDO TU SALUD MENTAL.
+        La Fundación Rehobot en articulación con La Policía de Infancia y
+        adolescencia, inicia su recorrido por las diferentes instituciones
+        académicas del municipio de Soacha Cundinamarca. Para implementar el
+        plan de acción denominado CUIDANDO TU SALUD MENTAL.
       </p>
     </Surface>
   );
 }
-
 
 function Icons() {
   return (
@@ -33,11 +39,7 @@ function Icons() {
 
 function Content() {
   return (
-    <div
-      className={clsx(
-        "flex max-w-xl flex-col gap-4 mx-auto pb-30"
-      )}
-    >
+    <div className={clsx("flex max-w-xl flex-col gap-4 mx-auto pb-30")}>
       <Basic />
       <Typography type="h1">Hola</Typography>
       <Typography>
@@ -81,7 +83,7 @@ function Content() {
         No podemos esperar, cada 30 horas en Colombia se quita la vida una
         persona de entre 5 y 17 años. Según cifras oficiales del DANE.
       </Typography>
-      <Separator variant="tertiary" className="m-8"/>
+      <Separator variant="tertiary" className="m-8" />
       <Typography className={clsx("text-sm", "italic", "text-center")}>
         Cada 40 segundos se suicida una persona en el mundo. Según cifras
         oficiales de la OMS.
@@ -94,38 +96,29 @@ export function Mision() {
   return (
     <>
       <Nav />
-      <img className="mt-[120px] w-[22rem] h-[10rem] mx-auto" src="/vision.png" alt="Visión" />
-<div className="text-center">
-      <h2
-                className={clsx(
-                  
-                  "my-2",
-                  "text-5xl",
-                  "font-bold",
-                  "leading-tight",
-                )}
-              >
-                Misión y Visión
-              </h2>
-              <div className={clsx("w-full", "mb-4")}>
-                <div
-                  className={clsx(
-                    "h-1",
-                    "mx-auto",
-                    "bg-white",
-                    "w-1/6",
-                    "opacity-25",
-                    "my-0",
-                    "py-0",
-                    "rounded-t",
-                  )}
-                ></div>
-              </div>
-              <h3 className={clsx("my-4", "text-3xl", "leading-tight", "max-w-xl", "mx-auto")}>
-                Nuestra misión es ayudar a las personas que lo necesitan
-              </h3>
-              </div>
-      
+      <img
+        className="mt-[120px] w-[22rem] h-[10rem] mx-auto"
+        src="/vision.png"
+        alt="Visión"
+      />
+      <div className="text-center">
+        <h2 className={clsx("my-2", "text-5xl", "font-bold", "leading-tight")}>
+          Misión y Visión
+        </h2>
+        <OurSeparator />
+        <h3
+          className={clsx(
+            "my-4",
+            "text-3xl",
+            "leading-tight",
+            "max-w-xl",
+            "mx-auto",
+          )}
+        >
+          Nuestra misión es ayudar a las personas que lo necesitan
+        </h3>
+      </div>
+
       <Content />
       <Footer />
     </>

@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import { Button } from "@heroui/react";
 import Contact from "../Contact";
+import OurSperator from "../OurSeparator";
 
 function Contenido() {
   return (
@@ -30,15 +30,12 @@ function Contenido() {
           )}
         ></div>
       </div>
+      <OurSperator />
       <h3 className={clsx("my-4", "text-3xl", "leading-tight")}>
         Todos podemos ayudar!
       </h3>
 
       <Contact />
-
-      <Button variant="secondary" size="lg" className={clsx("mx-4", "my-4")}>
-        Ayudas y donaciones
-      </Button>
     </section>
   );
 }
