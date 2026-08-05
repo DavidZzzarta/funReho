@@ -5,8 +5,16 @@ export function Hero() {
   return (
     <div>
       <div className={clsx("absolute", "top-0", "left-0", "w-full", "h-full")}>
-  <img className={clsx("w-full", "h-full", "object-cover", "object-bottom")} src="/bg-kids.png" />
+  <img 
+    className={clsx(
+      "w-full h-full",
+      "object-contain object-bottom", // Por defecto: En celulares se encoge para mostrarse completa
+      "md:object-cover md:object-bottom" // En tablets y computadoras: Se expande cubriendo el fondo
+    )} 
+    src="/bg-kids.png" 
+  />
 </div>
+
 
 
 
