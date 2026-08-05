@@ -1,8 +1,9 @@
 import { useState } from "react";
 import clsx from "clsx";
-import { Link } from "wouter";
-import {Button} from "@heroui/react";
-import { Menu } from 'lucide-react'
+import { Link } from "@heroui/react";
+import { Button } from "@heroui/react";
+import { Menu } from "lucide-react";
+import Contact from "./Contact";
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ export function Nav() {
         "backdrop-blur-md",
         "bg-black/70",
         "p-3",
-        "fixed"
+        "fixed",
       )}
     >
       <div
@@ -52,16 +53,14 @@ export function Nav() {
             />
           </Link>
         </div>
-        <div >
-          <Button
-            isIconOnly
-            variant="ghost"
-            className={clsx("block", "lg:hidden", "pr-4")}
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <Menu />
-          </Button>
-        </div>
+        <Button
+          isIconOnly
+          variant="ghost"
+          className={clsx("block", "lg:hidden")}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <Menu />
+        </Button>
         <div
           className={clsx(
             "w-full",
@@ -85,73 +84,24 @@ export function Nav() {
               "justify-end",
               "flex-1",
               "items-center",
+              "gap-8",
             )}
           >
-            <li className={clsx("mr-3")}>
-              <Link
-                className={clsx(
-                  "inline-block",
-                  "no-underline",
-                  "hover:text-underline",
-                  "py-2",
-                  "px-4",
-                )}
-                href="/mision"
-              >
-                Mision y visión
-              </Link>
+            <li>
+              <Link href="/mision">Mision y visión</Link>
             </li>
-            <li className={clsx("mr-3")}>
-              <Link
-                className={clsx(
-                  "inline-block",
-                  "no-underline",
-                  "hover:text-underline",
-                  "py-2",
-                  "px-4",
-                )}
-                href="/recorrido"
-              >
-                Recorrido
-              </Link>
+            <li>
+              <Link href="/recorrido">Recorrido</Link>
             </li>
-            <li className={clsx("mr-3")}>
-              <Link
-                className={clsx(
-                  "inline-block",
-
-                  "no-underline",
-                  "hover:text-underline",
-                  "py-2",
-                  "px-4",
-                )}
-                href="/plan"
-              >
-                Plan de accion
-              </Link>
+            <li>
+              <Link href="/plan">Plan de accion</Link>
+            </li>
+            <li>
+              <Contact />
             </li>
           </ul>
-          <Button
-            id="navAction"
-            className={clsx(
-              "mx-auto",
-              "lg:mx-0",
-              "mt-4",
-              "lg:mt-0",
-            )}
-            size="lg"
-          >
-            Contacto
-          </Button>
         </div>
       </div>
-      <hr
-        className={clsx(
-          "opacity-25",
-          "my-0",
-          "py-0",
-        )}
-      />
     </nav>
   );
 }

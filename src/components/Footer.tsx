@@ -1,18 +1,6 @@
-import { SocialIcon } from "react-social-icons";
-import { Link } from "wouter";
 import clsx from "clsx";
-
-function SocialIcons() {
-  return (
-    <>
-      <SocialIcon url="https://facebook.com/couetilc" />
-      <SocialIcon url="https://instagram.com/couetilc" />
-      <SocialIcon url="https://youtube.com/couetilc" />
-      <SocialIcon url="mailto:contacto@fundacion.org" />
-      <SocialIcon url="https://wa.me/573000000000" />
-    </>
-  );
-}
+import { Link } from "@heroui/react";
+import { SocialIcons } from "./Social";
 
 export function Footer() {
   return (
@@ -28,14 +16,17 @@ export function Footer() {
           )}
         >
           {/* Logo / Información */}
-          <div className="max-w-sm">
-            <h2 className={clsx("text-2xl", "font-bold")}>
-              Fundación Rehoboth
-            </h2>
-            <p className={clsx("mt-3")}>
-              Transformando vidas a través de la educación, el apoyo social y el
-              desarrollo comunitario.
-            </p>
+          <div className="max-w-[299px]">
+            <img src="/icon.svg" alt="Logo" className="h-16 mb-4" />
+            <div className="col-span-10">
+              <h2 className={clsx("text-2xl", "font-bold")}>
+                Fundación Rehoboth
+              </h2>
+              <p className={clsx("mt-3")}>
+                Transformando vidas a través de la educación, el apoyo social y
+                el desarrollo comunitario.
+              </p>
+            </div>
 
             <div className={clsx("mt-6", "flex", "gap-3")}>
               <SocialIcons />
@@ -50,19 +41,19 @@ export function Footer() {
 
             <ul className="space-y-2">
               <li>
-                <Link to="/mision" className={clsx("hover:underline")}>
+                <Link href="/mision" className={clsx("hover:underline")}>
                   Misión y visión
                 </Link>
               </li>
 
               <li>
-                <Link to="/plan" className={clsx("hover:underline")}>
+                <Link href="/plan" className={clsx("hover:underline")}>
                   Plan de acción
                 </Link>
               </li>
 
               <li>
-                <Link to="/recorrido" className={clsx("hover:underline")}>
+                <Link href="/recorrido" className={clsx("hover:underline")}>
                   Recorrido
                 </Link>
               </li>
@@ -84,7 +75,13 @@ export function Footer() {
         </div>
 
         <div
-          className={clsx("mt-10", "border-t", "pt-6", "text-center", "text-sm")}
+          className={clsx(
+            "mt-10",
+            "border-t",
+            "pt-6",
+            "text-center",
+            "text-sm",
+          )}
         >
           © {new Date().getFullYear()} Fundación. Todos los derechos reservados.
         </div>

@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 export function Tour() {
   return (
-    <section className={clsx( "border-b", "py-8")}>
+    <section className={clsx("border-b", "py-8")}>
       <div className={clsx("container", "max-w-5xl", "mx-auto", "m-8")}>
         <h2
           className={clsx(
@@ -33,12 +33,7 @@ export function Tour() {
         <div className={clsx("flex", "flex-wrap")}>
           <div className={clsx("w-5/6", "sm:w-1/2", "p-6")}>
             <h3
-              className={clsx(
-                "text-3xl",
-                "font-bold",
-                "leading-none",
-                "mb-3",
-              )}
+              className={clsx("text-3xl", "font-bold", "leading-none", "mb-3")}
             >
               Ayudamos a los mas necesitados
             </h3>
@@ -54,12 +49,7 @@ export function Tour() {
             <img
               src="/foto1.jpeg"
               alt="Icono"
-              className={clsx(
-                "w-5/6",
-                "sm:h-64",
-                "mx-auto",
-                "rounded-4xl",
-              )}
+              className={clsx("w-5/6", "sm:h-64", "mx-auto", "rounded-4xl")}
             />
           </div>
         </div>
@@ -75,12 +65,7 @@ export function Tour() {
             <img
               src="/foto2.jpeg"
               alt="Icono"
-              className={clsx(
-                "w-5/6",
-                "sm:h-64",
-                "mx-auto",
-                "rounded-4xl",
-              )}
+              className={clsx("w-5/6", "sm:h-64", "mx-auto", "rounded-4xl")}
             />
           </div>
           <div className={clsx("w-full", "sm:w-1/2", "p-6", "mt-6")}>
