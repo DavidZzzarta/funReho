@@ -52,10 +52,11 @@ export function Nav() {
             />
           </Link>
         </div>
-        <div className={clsx("block", "lg:hidden", "pr-4")}>
+        <div >
           <Button
             isIconOnly
             variant="ghost"
+            className={clsx("block", "lg:hidden", "pr-4")}
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu />

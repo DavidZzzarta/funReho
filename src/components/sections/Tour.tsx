@@ -59,8 +59,6 @@ export function Tour() {
                 "sm:h-64",
                 "mx-auto",
                 "rounded-4xl",
-                "shadow-lg",
-                "shadow-gray-4000",
               )}
             />
           </div>
@@ -82,8 +80,6 @@ export function Tour() {
                 "sm:h-64",
                 "mx-auto",
                 "rounded-4xl",
-                "shadow-lg",
-                "shadow-gray-400",
               )}
             />
           </div>

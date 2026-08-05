@@ -27,6 +27,10 @@ function Card({
         "flex-col",
         "flex-grow",
         "flex-shrink",
+        "shadow-lg",
+        "shadow-gray-800/40",
+        "rounded-3xl",
+        'mb-14'
       )}
     >
       <div
@@ -41,7 +45,7 @@ function Card({
           <img
             src={imgUrl}
             alt={titulo}
-            className={clsx("w-full", "h-64", "object-cover", "rounded-t-3xl")}
+            className={clsx("w-full", "h-84", "object-cover", "rounded-t-3xl")}
           />
         )}
 

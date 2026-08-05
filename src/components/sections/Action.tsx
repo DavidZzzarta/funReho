@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Button } from "@heroui/react";
 
 export function Action() {
   return (
@@ -36,45 +37,8 @@ export function Action() {
         <h3 className={clsx("my-4", "text-3xl", "leading-tight")}>
           Todos podemos ayudar!
         </h3>
-        <button
-          className={clsx(
-            "mx-auto",
-            "lg:mx-0",
-            "hover:underline",
-            "bg-white",
-            "text-gray-800",
-            "font-bold",
-            "rounded-full",
-            "my-6",
-            "py-4",
-            "px-8",
-            "shadow-lg",
-            "focus:outline-none",
-            "focus:shadow-outline",
-            "transform",
-            "transition",
-            "hover:scale-105",
-            "duration-300",
-            "ease-in-out",
-          )}
-        >
-          Contacto
-        </button>
-        <button
-          className={clsx(
-            "mx-auto",
-            "lg:mx-0",
-            "hover:underline",
-            "text-white",
-            "font-bold",
-            "my-6",
-            "py-4",
-            "px-8",
-            "underline",
-          )}
-        >
-          Ayudas y donaciones
-        </button>
+        <Button size="lg" className={clsx("mx-4", "my-4")}>Contacto</Button>
+        <Button variant="secondary" size="lg" className={clsx("mx-4", "my-4")}>Ayudas y donaciones</Button>
       </section>
     </div>
   );
