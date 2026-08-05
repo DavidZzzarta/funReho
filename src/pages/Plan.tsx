@@ -1,7 +1,6 @@
 import { Typography } from "@heroui/react";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
-import { SubHero } from "../components/SubHero";
 import clsx from "clsx";
 import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 import { Link } from "@heroui/react";
@@ -55,6 +54,7 @@ function Content() {
         apoyo psicológico en tiempo real a personas en crisis, ayudándolas a
         estabilizarse y reorientar su realidad.
       </Typography>
+<Icons />
 
       <Typography type="h1">Apoyo integral</Typography>
       <Typography>
