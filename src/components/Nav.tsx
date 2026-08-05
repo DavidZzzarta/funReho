@@ -14,6 +14,8 @@ export function Nav() {
         "z-30",
         "top-0",
         "backdrop-blur-md",
+        "bg-black/70",
+        "p-3",
         "fixed"
       )}
     >
@@ -69,9 +71,7 @@ export function Nav() {
             isOpen ? "block" : "hidden",
             "mt-2",
             "lg:mt-0",
-            "bg-white",
             "lg:bg-transparent",
-
             "p-4",
             "lg:p-0",
             "z-20",

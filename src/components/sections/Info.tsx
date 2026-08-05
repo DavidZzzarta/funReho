@@ -1,16 +1,16 @@
 import clsx from "clsx";
 import { Link } from "wouter";
-
+import { Button } from "@heroui/react";
+import { ChevronRight } from "lucide-react";
+import { Separator } from '@heroui/react';
 
 function Card({
-  children,
   fecha,
   titulo,
   descripcion,
   imgUrl,
   url,
 }: {
-  children: React.ReactNode;
   fecha: string;
   titulo: string;
   descripcion: string;
@@ -71,7 +71,6 @@ function Card({
               "w-full",
               "font-bold",
               "text-xl",
-              "text-gray-800",
               "px-6",
               "mt-2",
             )}
@@ -81,7 +80,6 @@ function Card({
 
           <p
             className={clsx(
-              "text-gray-800",
               "text-base",
               "px-6",
               "mt-3",
@@ -93,7 +91,14 @@ function Card({
         </Link>
       </div>
 
-      {children}
+      <Separator variant="secondary" className="my-4" />
+
+      <div className={clsx("flex", "justify-center")}>
+        <Button variant="secondary" size="lg">
+          <ChevronRight />
+          Leer más
+        </Button>
+      </div>
     </div>
   );
 }
@@ -107,142 +112,21 @@ function Cards() {
         descripcion="No dejamos a nadie solo con sus luchas internas y externas"
         imgUrl="/a1.png"
         url="/mision"
-      >
-        <div
-          className={clsx(
-            "flex-none",
-            "mt-auto",
-            "rounded-b",
-            "rounded-t-none",
-            "overflow-hidden",
-            "shadow",
-            "p-6",
-          )}
-        >
-          <div className={clsx("flex", "items-center", "justify-start")}>
-            <Link
-              href="/mision"
-              className={clsx(
-                "mx-auto",
-                "lg:mx-0",
-                "hover:underline",
-                "gradient",
-                "text-white",
-                "font-bold",
-                "rounded-full",
-                "my-6",
-                "py-4",
-                "px-8",
-                "shadow-lg",
-                "focus:outline-none",
-                "focus:shadow-outline",
-                "transform",
-                "transition",
-                "hover:scale-105",
-                "duration-300",
-                "ease-in-out",
-              )}
-            >
-              Leer mas
-            </Link>
-          </div>
-        </div>
-      </Card>
-
+      />
       <Card
         fecha="16 mayo, 2022"
         titulo="Plam de accion"
         descripcion="Tenemos un plan de accion completo puesto para todos los que lo necesiten."
         imgUrl="/a2.png"
         url="/plan"
-      >
-        <div
-          className={clsx(
-            "flex-none",
-            "mt-auto",
-            "rounded-b",
-            "rounded-t-none",
-            "overflow-hidden",
-            "shadow",
-            "p-6",
-          )}
-        >
-          <div className={clsx("flex", "items-center", "justify-center")}>
-            <Link
-              href="/plan"
-              className={clsx(
-                "mx-auto",
-                "lg:mx-0",
-                "hover:underline",
-                "gradient",
-                "text-white",
-                "font-bold",
-                "rounded-full",
-                "my-6",
-                "py-4",
-                "px-8",
-                "shadow-lg",
-                "focus:outline-none",
-                "focus:shadow-outline",
-                "transform",
-                "transition",
-                "hover:scale-105",
-                "duration-300",
-                "ease-in-out",
-              )}
-            >
-              Leer mas
-            </Link>
-          </div>
-        </div>
-      </Card>
+      />
 
       <Card
         fecha="16 mayo, 2014"
         titulo="Nuestro recorrido"
         descripcion="Desde 2014 hemos llevado ayudas de forma voluntaria a ninos, familias, y todo tipo de personas desde Ibague, Sibate, y Bogota"
         imgUrl="/a3.png"
-      >
-        <div
-          className={clsx(
-            "flex-none",
-            "mt-auto",
-            "rounded-b",
-            "rounded-t-none",
-            "overflow-hidden",
-            "shadow",
-            "p-6",
-          )}
-        >
-          <div className={clsx("flex", "items-center", "justify-end")}>
-            <Link
-              href="/recorrido"
-              className={clsx(
-                "mx-auto",
-                "lg:mx-0",
-                "hover:underline",
-                "gradient",
-                "text-white",
-                "font-bold",
-                "rounded-full",
-                "my-6",
-                "py-4",
-                "px-8",
-                "shadow-lg",
-                "focus:outline-none",
-                "focus:shadow-outline",
-                "transform",
-                "transition",
-                "hover:scale-105",
-                "duration-300",
-                "ease-in-out",
-              )}
-            >
-              Leer mas
-            </Link>
-          </div>
-        </div>
-      </Card>
+      />
     </>
   );
 }
