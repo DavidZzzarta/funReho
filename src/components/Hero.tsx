@@ -47,6 +47,7 @@ export function Hero() {
           "flex",
           "flex-wrap",
           "flex-col",
+          
           "md:flex-row",
           "items-center",
           "h-screen",
@@ -68,7 +69,7 @@ export function Hero() {
             Queremos escucharte
           </p>
           <h1
-            className={clsx("my-4", "text-5xl", "font-bold", "leading-tight")}
+            className={clsx("my-4", "text-4xl", "font-bold", "leading-tight")}
           >
             Trabajamos para disminuir las cifras de suicidios
           </h1>

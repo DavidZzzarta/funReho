@@ -64,6 +64,7 @@ export function OurCard({
           rel="noopener noreferrer"
         >
           Ver más
+          <LinkHeroUI.Icon />
         </LinkHeroUI>
       </Card.Footer>
     </Card>

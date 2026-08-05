@@ -43,18 +43,21 @@ export function Footer() {
               <li>
                 <Link href="/mision" className={clsx("hover:underline")}>
                   Misión y visión
+                  <Link.Icon />
                 </Link>
               </li>
 
               <li>
                 <Link href="/plan" className={clsx("hover:underline")}>
                   Plan de acción
+                  <Link.Icon />
                 </Link>
               </li>
 
               <li>
                 <Link href="/recorrido" className={clsx("hover:underline")}>
                   Recorrido
+                  <Link.Icon />
                 </Link>
               </li>
             </ul>

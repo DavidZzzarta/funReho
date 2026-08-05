@@ -1,16 +1,32 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { Separator } from "@heroui/react";
 
-import { SubHero } from "../components/SubHero";
 import clsx from "clsx";
 import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 
+import {Surface} from "@heroui/react";
+
+import { Typography } from "@heroui/react";
+
+export function Basic() {
+  return (
+    <Surface className="flex min-w-[320px] flex-col gap-3 rounded-3xl p-6" variant="tertiary">
+      
+      <p className="text-sm text-muted">
+        La Fundación Rehobot en articulación con La Policía de Infancia y adolescencia, inicia su recorrido por las diferentes instituciones académicas del municipio de Soacha Cundinamarca. Para implementar el plan de acción denominado CUIDANDO TU SALUD MENTAL.
+      </p>
+    </Surface>
+  );
+}
+
+
 function Icons() {
   return (
-    <div className={clsx("flex", "justify-center", "gap-18", "mt-8")}>
-      <Rocket className={clsx("w-12", "h-12")} color="#919191" />
-      <HeartPulse className={clsx("w-12", "h-12")} color="#919191" />
-      <TableCellsMerge className={clsx("w-12", "h-12")} color="#919191" />
+    <div className={clsx("flex", "justify-center", "gap-18")}>
+      <Rocket className={clsx("w-12", "h-12")} />
+      <HeartPulse className={clsx("w-12", "h-12")} />
+      <TableCellsMerge className={clsx("w-12", "h-12")} />
     </div>
   );
 }
@@ -19,33 +35,19 @@ function Content() {
   return (
     <div
       className={clsx(
-        "max-w-4xl",
-        "mx-auto",
-        "px-4",
-        "py-8",
-        "rounded-lg",
-        "shadow-lg",
-        "p-6",
+        "flex max-w-xl flex-col gap-4 mx-auto pb-30"
       )}
     >
-      <p>
-        La Fundación Rehobot en articulación con La Policía de Infancia y
-        adolescencia, inicia su recorrido por las diferentes instituciones
-        académicas del municipio de Soacha Cundinamarca. Para implementar el
-        plan de acción denominado<strong> CUIDANDO TU SALUD MENTAL</strong>.
-      </p>
-      <br />
-      <Icons />
-      <br />
-      <p>
+      <Basic />
+      <Typography type="h1">Hola</Typography>
+      <Typography>
         En el cual estaremos compartiendo valiosa información de ayuda, por
         medio de conferencias, actividades, charlas. Para enfrentar la presente
         problemática que nos aqueja como sociedad y es el aumento exponencial en
         la población estudiantil de suicidios e intentos de suicidio, violencia
         familiar y escolar, auto lesiones, entre otras.
-      </p>
-      <br />
-      <p>
+      </Typography>
+      <Typography>
         Si bien es cierto que es el estado garante de prestar los diferentes
         servicios de salud para la población menos favorecida, la labor de las
         entidades sin ánimo de lucro es dar un apoyo. Desde la fundación estamos
@@ -54,12 +56,13 @@ function Content() {
         mismos puedan aprender a gestionar adecuadamente sus emociones logrando
         así que nuestros hijos busquen ayuda a tiempo y evitar desenlaces
         fatales.
-      </p>
-      <br />
-      <p>Estamos comprometidos con la salud mental.</p>
-      <br />
-      <p>Equipo de trabajo conformado por:</p>
-      <br />
+      </Typography>
+
+      <Icons />
+      <Typography>Estamos comprometidos con la salud mental.</Typography>
+
+      <Typography>Equipo de trabajo conformado por:</Typography>
+
       <ul className={clsx("list-disc", "list-inside")}>
         <li>Psicología</li>
         <li>Trabajo social</li>
@@ -68,23 +71,21 @@ function Content() {
         <li>Logística</li>
       </ul>
 
-      <br />
-      <p>
+      <Typography>
         Agradecemos enormemente a nuestro equipo de psicólogas y psicólogos,
         conferencistas, logística, voluntarios y por supuesto a los rectores de
         cada institución que nos abre sus puertas para enfrentar juntos este
         reto.
-      </p>
-      <br />
-      <p>
+      </Typography>
+      <Typography>
         No podemos esperar, cada 30 horas en Colombia se quita la vida una
         persona de entre 5 y 17 años. Según cifras oficiales del DANE.
-      </p>
-      <br />
-      <p className={clsx("text-sm", "italic", "text-center")}>
+      </Typography>
+      <Separator variant="tertiary" className="m-8"/>
+      <Typography className={clsx("text-sm", "italic", "text-center")}>
         Cada 40 segundos se suicida una persona en el mundo. Según cifras
         oficiales de la OMS.
-      </p>
+      </Typography>
     </div>
   );
 }
@@ -93,10 +94,38 @@ export function Mision() {
   return (
     <>
       <Nav />
-      <SubHero
-        title="Misión y Visión"
-        subtitle="Nuestra misión es ayudar a las personas que lo necesitan"
-      />
+      <img className="mt-[120px] w-[22rem] h-[10rem] mx-auto" src="/vision.png" alt="Visión" />
+<div className="text-center">
+      <h2
+                className={clsx(
+                  
+                  "my-2",
+                  "text-5xl",
+                  "font-bold",
+                  "leading-tight",
+                )}
+              >
+                Misión y Visión
+              </h2>
+              <div className={clsx("w-full", "mb-4")}>
+                <div
+                  className={clsx(
+                    "h-1",
+                    "mx-auto",
+                    "bg-white",
+                    "w-1/6",
+                    "opacity-25",
+                    "my-0",
+                    "py-0",
+                    "rounded-t",
+                  )}
+                ></div>
+              </div>
+              <h3 className={clsx("my-4", "text-3xl", "leading-tight", "max-w-xl", "mx-auto")}>
+                Nuestra misión es ayudar a las personas que lo necesitan
+              </h3>
+              </div>
+      
       <Content />
       <Footer />
     </>
