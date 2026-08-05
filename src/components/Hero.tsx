@@ -53,7 +53,14 @@ export function Hero() {
           </h1>
           <p className={clsx("leading-normal", "text-2xl", "mb-2")}>
             Con un recorrido desde{" "}
-            <strong className={clsx("underline")}>2014</strong>
+            <strong className={clsx(
+  "font-bold",
+  "bg-gradient-to-r from-purple-600 to-red-500", // Gradiente de morado a rojo
+  "bg-clip-text text-transparent" // Aplica el gradiente estrictamente al texto
+)}>
+  2014
+</strong>
+
           </p>
           <p className={clsx("text-xs", "my-4")}>Si repararamos familias, reparamos la sociedad</p>
 
