@@ -55,7 +55,6 @@ export function Nav() {
           </Link>
         </div>
         <Button
-          isIconOnly
           variant="ghost"
           className={clsx("block", "lg:hidden")}
           onClick={() => setIsOpen(!isOpen)}

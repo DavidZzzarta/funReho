@@ -27,9 +27,9 @@ export function Basic() {
 function Icons() {
   return (
     <div className={clsx("flex", "justify-center", "gap-18")}>
-      <Rocket className={clsx("w-12", "h-12")} />
-      <HeartPulse className={clsx("w-12", "h-12")} />
-      <TableCellsMerge className={clsx("w-12", "h-12")} />
+      <Rocket className={clsx("w-12", "h-12")} color="#b83684" />
+      <HeartPulse className={clsx("w-12", "h-12")} color="#b83643" />
+      <TableCellsMerge className={clsx("w-12", "h-12")} color="#b86a36" />
     </div>
   );
 }
