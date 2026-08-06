@@ -2,8 +2,6 @@ import { Typography } from "@heroui/react";
 import clsx from "clsx";
 import { Separator } from "@heroui/react";
 
-
-
 export default function PlanContent() {
   return (
     <>
