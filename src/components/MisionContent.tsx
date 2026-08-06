@@ -1,11 +1,18 @@
 import clsx from "clsx";
 import { Typography } from "@heroui/react";
 import { Separator } from "@heroui/react";
-import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
+import {
+  Rocket,
+  HeartPulse,
+  TableCellsMerge,
+  Eye,
+  SquareActivity,
+  WavesHorizontal,
+} from "lucide-react";
 
-function Icons() {
+function Icons1() {
   return (
-    <div className={clsx("flex", "justify-center", "gap-18")}>
+    <div className={clsx("flex", "justify-center", "gap-18", "mb-2", "mt-4")}>
       <Rocket className={clsx("w-12", "h-12")} color="#b83684" />
       <HeartPulse className={clsx("w-12", "h-12")} color="#b83643" />
       <TableCellsMerge className={clsx("w-12", "h-12")} color="#b86a36" />
@@ -13,9 +20,20 @@ function Icons() {
   );
 }
 
+function Icons2() {
+  return (
+    <div className={clsx("flex", "justify-center", "gap-18", "mb-2", "mt-4")}>
+      <Eye className={clsx("w-12", "h-12")} color="#b83684" />
+      <SquareActivity className={clsx("w-12", "h-12")} color="#b83643" />
+      <WavesHorizontal className={clsx("w-12", "h-12")} color="#b86a36" />
+    </div>
+  );
+}
+
 export default function MisionContent() {
   return (
     <>
+      <Icons1 />
       <Typography type="h1">Misión de la Fundación Rehobot</Typography>
       <Separator />
       <Typography>
@@ -27,7 +45,6 @@ export default function MisionContent() {
         oportuno para superar crisis emocionales, prevenir el suicidio y
         desarrollar todo su potencial humano.
       </Typography>
-      <Icons />
 
       <Typography type="h2">Nuestros ejes de acción:</Typography>
       <Typography type="h3">
@@ -116,6 +133,8 @@ export default function MisionContent() {
         garantizando calidad en el servicio interno y externo, bajo el lema del
         **respeto** como bandera institucional.
       </Typography>
+
+      <Icons2 />
 
       <Typography type="h1">Vision de la Fundación Rehobot</Typography>
 

@@ -19,7 +19,7 @@ export function ProjectsDropdown() {
         <Dropdown.Menu
           onAction={(key) => {
             window.location.href = "/plan";
-            console.log(key)
+            console.log(key);
           }}
         >
           <Dropdown.Item id="open-file" textValue="Open file">
