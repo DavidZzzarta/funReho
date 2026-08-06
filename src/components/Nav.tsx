@@ -1,9 +1,40 @@
+"use client";
+
 import { useState } from "react";
 import clsx from "clsx";
 import { Link } from "@heroui/react";
-import { Button } from "@heroui/react";
 import { Menu } from "lucide-react";
 import Contact from "./Contact";
+
+import { BicepsFlexed } from "lucide-react";
+import { Button, Dropdown, Label, Description } from "@heroui/react";
+
+export function ProjectsDropdown() {
+  return (
+    <Dropdown>
+      <Button aria-label="Menu" variant="ghost" size="lg">
+        Nuestros projectos
+      </Button>
+      <Dropdown.Popover>
+        <Dropdown.Menu
+          onAction={(key) => {
+            window.location.href = "/plan";
+          }}
+        >
+          <Dropdown.Item id="open-file" textValue="Open file">
+            <div className="flex h-8 items-start justify-center pt-px">
+              <BicepsFlexed size={24} className="shrink-0 text-muted" />
+            </div>
+            <div className="flex flex-col">
+              <Label>Cuidando tu salud mental</Label>
+              <Description>Por Yenni Zarta</Description>
+            </div>
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown.Popover>
+    </Dropdown>
+  );
+}
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -103,10 +134,7 @@ export function Nav() {
               </Link>
             </li>
             <li>
-              <Link href="/plan">
-                Nuestros proyectos
-                <Link.Icon />
-              </Link>
+              <ProjectsDropdown />
             </li>
             <li>
               <Contact />
