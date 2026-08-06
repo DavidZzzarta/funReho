@@ -21,7 +21,7 @@ export function Footer() {
             <img src="/icon.svg" alt="Logo" className="h-16 mb-4" />
             <div className="col-span-10">
               <h2 className={clsx("text-2xl", "font-bold")}>
-                Fundación Rehoboth
+                Fundación Rehobot
               </h2>
               <p className={clsx("mt-3")}>
                 Transformando vidas a través de la educación, el apoyo social y

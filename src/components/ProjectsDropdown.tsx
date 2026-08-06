@@ -9,7 +9,7 @@ export default function ProjectsDropdown() {
         variant="ghost" // Elimina el fondo sólido por defecto
         className="p-0 min-w-0 h-auto rounded-none bg-transparent hover:bg-transparent" // Resetea geometría y estados
       >
-        Nuestros projectos
+        Nuestros proyectos
       </Button>
       <Dropdown.Popover>
         <Dropdown.Menu

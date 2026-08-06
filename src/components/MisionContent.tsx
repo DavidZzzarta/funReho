@@ -136,7 +136,7 @@ export default function MisionContent() {
 
       <Icons2 />
 
-      <Typography type="h1">Vision de la Fundación Rehobot</Typography>
+      <Typography type="h1">Visión de la Fundación Rehobot</Typography>
 
       <Typography>
         Ser la fundación líder y más reconocida de Colombia en la prevención del

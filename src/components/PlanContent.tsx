@@ -1,6 +1,22 @@
 import { Typography } from "@heroui/react";
 import clsx from "clsx";
-import { Separator } from "@heroui/react";
+import { Link, Separator } from "@heroui/react";
+
+function Enlace() {
+  return (
+    <div className="flex flex-col items-center text-center gap-2 p-6 max-w-xl mx-auto">
+      {/* Subtítulo Descriptivo */}
+      <p className="text-base max-w-md">¿Necesitas apoyo psicológico?</p>
+      <Link
+        href="https://bogota.gov.co/mi-ciudad/salud/bogota-el-distrito-ofrece-ayuda-psicologica-gratis-cuales-son"
+        className="inline-flex items-center justify-center text-center font-medium transition-colors duration-200 text-fuchsia-500 hover:text-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:ring-offset-2"
+      >
+        En estas líneas encontrarás ayuda en Bogotá
+        <Link.Icon />
+      </Link>
+    </div>
+  );
+}
 
 export default function PlanContent() {
   return (
@@ -130,6 +146,8 @@ export default function PlanContent() {
         talleres o charlas sobre cuidado de la salud mental a tu colegio,
         empresa o grupo, contáctanos. Juntos podemos salvar vidas.
       </Typography>
+      <br />
+      <Enlace />
     </>
   );
 }

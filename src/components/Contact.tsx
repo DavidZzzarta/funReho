@@ -6,7 +6,7 @@ import { SocialIcons } from "./Social";
 export default function Contact() {
   return (
     <Modal>
-      <Button size="lg">Contaco</Button>
+      <Button size="lg">Contacto</Button>
       <Modal.Backdrop variant="blur">
         <Modal.Container>
           <Modal.Dialog className="sm:max-w-[360px]">

@@ -95,7 +95,7 @@ export function Nav() {
           >
             <li>
               <Link href="/mision">
-                Mision y visión
+                Misión y visión
                 <Link.Icon />
               </Link>
             </li>
