@@ -1,22 +1,12 @@
 import { Typography } from "@heroui/react";
 import clsx from "clsx";
-import { Rocket, HeartPulse, TableCellsMerge } from "lucide-react";
 import { Separator } from "@heroui/react";
 
-function Icons() {
-  return (
-    <div className={clsx("flex", "justify-center", "gap-18")}>
-      <Rocket className={clsx("w-12", "h-12")} color="#b83684" />
-      <HeartPulse className={clsx("w-12", "h-12")} color="#b83643" />
-      <TableCellsMerge className={clsx("w-12", "h-12")} color="#b86a36" />
-    </div>
-  );
-}
+
 
 export default function PlanContent() {
   return (
     <>
-      <Icons />
       <Typography type="h3">Origen y propósito</Typography>
       <Separator />
       <Typography>
