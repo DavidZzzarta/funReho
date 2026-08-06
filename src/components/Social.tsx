@@ -7,31 +7,33 @@ export function SocialIcons({ size }: { size?: number }) {
         style={{ height: size ?? 44, width: size ?? 44 }}
         bgColor="transparent"
         fgColor="white"
-        url="https://facebook.com/couetilc"
+        url="https://web.facebook.com/RehobotFundacion/?_rdc=1&_rdr#"
+        target="_blank"
+        rel="noopener noreferrer"
       />
       <SocialIcon
         style={{ height: size ?? 44, width: size ?? 44 }}
         bgColor="transparent"
         fgColor="white"
-        url="https://instagram.com/couetilc"
+        url="https://www.instagram.com/p/CD2pHyFHb8Q/"
+        target="_blank"
+        rel="noopener noreferrer"
       />
       <SocialIcon
         style={{ height: size ?? 44, width: size ?? 44 }}
         bgColor="transparent"
         fgColor="white"
-        url="https://youtube.com/couetilc"
+        url="https://www.youtube.com/channel/UCIT3vdiGrjk2PLyXT9GgKCQ"
+        target="_blank"
+        rel="noopener noreferrer"
       />
       <SocialIcon
         style={{ height: size ?? 44, width: size ?? 44 }}
         bgColor="transparent"
         fgColor="white"
-        url="mailto:contacto@fundacion.org"
-      />
-      <SocialIcon
-        style={{ height: size ?? 44, width: size ?? 44 }}
-        bgColor="transparent"
-        fgColor="white"
-        url="https://wa.me/573000000000"
+        url="https://wa.me/573236410946"
+        target="_blank"
+        rel="noopener noreferrer"
       />
     </>
   );

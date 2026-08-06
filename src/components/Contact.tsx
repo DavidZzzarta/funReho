@@ -18,12 +18,10 @@ export default function Contact() {
               <Modal.Heading>Contacto</Modal.Heading>
             </Modal.Header>
             <Modal.Body>
-              <p>
-                Ademas tambien puedes mandarnos un correo, al siguiente correo:
-              </p>
+              <p>Las maneras en que puedes comunicarte con nosotros:</p>
 
               <Link className="mt-4" href="mailto:correochimba@gmail.com">
-                correochimba@gmail.com
+                rehobothfruc@gmail.com
               </Link>
               <br />
               <br />

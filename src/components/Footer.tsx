@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Link } from "@heroui/react";
 import { SocialIcons } from "./Social";
+import ProjectsDropdown from "./ProjectsDropdown";
 
 export function Footer() {
   return (
@@ -48,17 +49,14 @@ export function Footer() {
               </li>
 
               <li>
-                <Link href="/plan" className={clsx("hover:underline")}>
-                  Plan de acción
+                <Link href="/recorrido" className={clsx("hover:underline")}>
+                  Recorrido
                   <Link.Icon />
                 </Link>
               </li>
 
               <li>
-                <Link href="/recorrido" className={clsx("hover:underline")}>
-                  Recorrido
-                  <Link.Icon />
-                </Link>
+                <ProjectsDropdown />
               </li>
             </ul>
           </div>
@@ -70,8 +68,8 @@ export function Footer() {
             </h3>
 
             <ul className="space-y-2">
-              <li>Email: contacto@fundacion.org</li>
-              <li>Tel: +57 300 000 0000</li>
+              <li>Email: rehobothfruc@gmail.com</li>
+              <li>Tel: +57 323 6410 946</li>
               <li>Bogotá, Colombia</li>
             </ul>
           </div>
