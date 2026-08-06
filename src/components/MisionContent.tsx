@@ -14,8 +14,8 @@ function Icons() {
 }
 
 export default function MisionContent() {
-return (
-<>
+  return (
+    <>
       <Typography type="h1">Misión de la Fundación Rehobot</Typography>
       <Separator />
       <Typography>
@@ -207,4 +207,3 @@ return (
     </>
   );
 }
-

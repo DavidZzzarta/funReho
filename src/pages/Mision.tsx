@@ -1,16 +1,12 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
-import { Separator } from "@heroui/react";
 
 import clsx from "clsx";
 
 import { Surface } from "@heroui/react";
 
-import { Typography } from "@heroui/react";
-
 import OurSeparator from "../components/OurSeparator";
 import MisionContent from "../components/MisionContent";
-
 
 export function Basic() {
   return (
@@ -25,16 +21,11 @@ export function Basic() {
   );
 }
 
-
-function Content() {
+function Titles() {
   return (
-    <div
-      className={clsx(
-        "flex max-w-4/5 md:max-w-4xl flex-col gap-4 mx-auto pb-30",
-      )}
-    >
+    <>
       <img
-        className="mt-[120px] w-[17rem] h-[7rem] mx-auto"
+        className=" w-[17rem] h-[7rem] mx-auto"
         src="/vision.png"
         alt="Visión"
       />
@@ -55,9 +46,21 @@ function Content() {
           Nuestra misión es ayudar a las personas que lo necesitan
         </h3>
       </div>
+    </>
+  );
+}
+
+function Content() {
+  return (
+    <div
+      className={clsx(
+        "flex max-w-4/5 md:max-w-4xl flex-col gap-4 mx-auto pb-30 mt-[120px]",
+      )}
+    >
+      <Titles />
       <Basic />
 
-<MisionContent />
+      <MisionContent />
     </div>
   );
 }
@@ -66,7 +69,6 @@ export function Mision() {
   return (
     <>
       <Nav />
-
       <Content />
       <Footer />
     </>
