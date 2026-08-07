@@ -1,19 +1,20 @@
 import clsx from "clsx";
 import { Card, Link as LinkHeroUI } from "@heroui/react";
 import OurSperator from "../OurSeparator";
+import ProjectsDropdown from "../ProjectsDropdown";
 
 export function OurCard({
   fecha,
   titulo,
   descripcion,
   imgUrl,
-  url,
+  children,
 }: {
   fecha: string;
   titulo: string;
   descripcion: string;
   imgUrl: string;
-  url: string;
+  children?: React.ReactNode;
 }) {
   return (
     <Card className={clsx("gap-2 w-full max-w-[376px] md:max-w-none")}>
@@ -59,14 +60,7 @@ export function OurCard({
           "mx-2",
         )}
       >
-        <LinkHeroUI
-          aria-label="Go to settings"
-          href={url}
-          rel="noopener noreferrer"
-        >
-          Ver más
-          <LinkHeroUI.Icon />
-        </LinkHeroUI>
+        {children}
       </Card.Footer>
     </Card>
   );
@@ -87,25 +81,37 @@ function Cards() {
       <OurCard
         fecha="9 de agosto del 2020"
         titulo="Mision y vision"
-        descripcion="No dejamos a nadie solo con sus luchas internas y externas"
+        descripcion="
+        Comprometidos con ayudar, colaborar y generar un impacto positivo en cada y persona y cada familia
+"
         imgUrl="/a1.png"
-        url="/mision"
-      />
-      <OurCard
-        fecha="16 mayo, 2022"
-        titulo="Plam de accion"
-        descripcion="Tenemos un plan de accion completo puesto para todos los que lo necesiten."
-        imgUrl="/a2.png"
-        url="/plan"
-      />
+      >
+        <LinkHeroUI>
+          Ver más
+          <LinkHeroUI.Icon />
+        </LinkHeroUI>
+      </OurCard>
 
       <OurCard
         fecha="16 mayo, 2014"
         titulo="Nuestro recorrido"
-        descripcion="Desde 2014 hemos llevado ayudas de forma voluntaria a ninos, familias, y todo tipo de personas desde Ibague, Sibate, y Bogota"
+        descripcion="Desde 2014, llevamos apoyo y ayuda de manera voluntaria a niños, familias y personas que lo necesitan, extendiendo nuestra labor desde Ibagué, Sibaté y Bogotá."
         imgUrl="/a3.png"
-        url="/recorrido"
-      />
+      >
+        <LinkHeroUI>
+          Ver más
+          <LinkHeroUI.Icon />
+        </LinkHeroUI>
+      </OurCard>
+      <OurCard
+        fecha="16 mayo, 2022"
+        titulo="Proyectos"
+        descripcion="Contamos con un plan de acción claro para desarrollar cada proyecto y seguir creciendo en nuestra labor.
+"
+        imgUrl="/a2.png"
+      >
+        <ProjectsDropdown />
+      </OurCard>
     </div>
   );
 }

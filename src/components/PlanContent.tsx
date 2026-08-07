@@ -8,10 +8,12 @@ function Enlace() {
       {/* Subtítulo Descriptivo */}
       <p className="text-base max-w-md">¿Necesitas apoyo psicológico?</p>
       <Link
+        target="_blank"
+        rel="noopener noreferrer"
         href="https://bogota.gov.co/mi-ciudad/salud/bogota-el-distrito-ofrece-ayuda-psicologica-gratis-cuales-son"
-        className="inline-flex items-center justify-center text-center font-medium transition-colors duration-200 text-fuchsia-500 hover:text-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:ring-offset-2"
+        className="inline-flex items-center justify-center text-center font-medium transition-colors duration-200 text-fuchsia-300 hover:text-fuchsia-400 focus:outline-none focus:ring-2 focus:ring-fuchsia-400 focus:ring-offset-2"
       >
-        En estas líneas encontrarás ayuda en Bogotá
+        Líneas de ayuda en Bogotá
         <Link.Icon />
       </Link>
     </div>
@@ -104,9 +106,13 @@ export default function PlanContent() {
       <Typography>
         En articulación con la Policía de Infancia y Adolescencia, recorremos
         las instituciones educativas de Soacha (Cundinamarca) implementando el
-        plan **"Cuidando tu Salud Mental"**, a través de conferencias, talleres
-        y actividades prácticas que llevan información valiosa a estudiantes,
-        docentes y familias. Proyectados a impactar todas las regiones.
+        plan{" "}
+        <span className="font-semibold text-purple-300">
+          Cuidando tu Salud Mental
+        </span>
+        , a través de conferencias, talleres y actividades prácticas que llevan
+        información valiosa a estudiantes, docentes y familias. Proyectados a
+        impactar todas las regiones.
       </Typography>
 
       <Typography type="h3">Foco de acción</Typography>

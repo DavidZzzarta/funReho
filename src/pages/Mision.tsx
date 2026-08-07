@@ -12,10 +12,9 @@ export function Basic() {
   return (
     <Surface className="rounded-3xl p-6" variant="tertiary">
       <p className="text-sm text-muted">
-        Aquí tienes la **misión de la Fundación Rehobot**, redactada de forma
-        clara, unificada, resumida y con un enfoque estratégico. Eliminé
-        repeticiones, organicé las ideas por ejes de acción y le di un tono
-        institucional y convincente:
+        Conocemos la importancia de ayudar y de comprender las necesidades de
+        cada persona y cada familia. Por eso, queremos compartir en esta página
+        nuestra <strong>misión y visión</strong>.
       </p>
     </Surface>
   );

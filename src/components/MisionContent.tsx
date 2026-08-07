@@ -37,13 +37,13 @@ export default function MisionContent() {
       <Typography type="h1">Misión de la Fundación Rehobot</Typography>
       <Separator />
       <Typography>
-        Somos una organización sin ánimo de lucro comprometida con la **salud
-        mental integral** de la población colombiana, especialmente de niños,
-        adolescentes, jóvenes, mujeres y adultos mayores en situación de
-        vulnerabilidad. Nuestro propósito es construir una sociedad más
-        empática, resiliente y consciente, donde cada persona encuentre apoyo
-        oportuno para superar crisis emocionales, prevenir el suicidio y
-        desarrollar todo su potencial humano.
+        Somos una organización sin ánimo de lucro comprometida con la{" "}
+        <strong>salud mental integral</strong> de la población colombiana,
+        especialmente de niños, adolescentes, jóvenes, mujeres y adultos mayores
+        en situación de vulnerabilidad. Nuestro propósito es construir una
+        sociedad más empática, resiliente y consciente, donde cada persona
+        encuentre apoyo oportuno para superar crisis emocionales, prevenir el
+        suicidio y desarrollar todo su potencial humano.
       </Typography>
 
       <Typography type="h2">Nuestros ejes de acción:</Typography>
@@ -63,13 +63,13 @@ export default function MisionContent() {
         2. Fortalecimiento familiar y comunitario
       </Typography>
       <Typography>
-        Capacitamos a padres, madres y docentes a través de nuestros innovadores
-        *Encuentros de Padres Reales*, alejándonos del enfoque culpabilizador
-        tradicional. Promovemos herramientas prácticas para educar con empatía,
-        establecer límites saludables y acompañar el crecimiento emocional de
-        los hijos. Atendemos especialmente a familias en desplazamiento,
-        monoparentales o en extrema pobreza, facilitando acceso a educación,
-        empleo y desarrollo humano.
+        Capacitamos a padres, madres y docentes a través de nuestros innovadores{" "}
+        <strong>Encuentros de Padres Reales</strong>, alejándonos del enfoque
+        culpabilizador tradicional. Promovemos herramientas prácticas para
+        educar con empatía, establecer límites saludables y acompañar el
+        crecimiento emocional de los hijos. Atendemos especialmente a familias
+        en desplazamiento, monoparentales o en extrema pobreza, facilitando
+        acceso a educación, empleo y desarrollo humano.
       </Typography>
 
       <Typography type="h3">
@@ -95,9 +95,7 @@ export default function MisionContent() {
         generando confianza, oportunidades y proyectos de vida sostenibles.
       </Typography>
 
-      <Typography type="h3">
-        5. Apoyo a la mujer y equidad de género**
-      </Typography>
+      <Typography type="h3">5. Apoyo a la mujer y equidad de género</Typography>
       <Typography>
         Reconocemos y visibilizamos el rol fundamental de la mujer en el hogar y
         la sociedad. Brindamos asesoría, capacitación y proyectos empresariales
@@ -107,7 +105,7 @@ export default function MisionContent() {
         intelectual.
       </Typography>
 
-      <Typography type="h3">6. Bienestar del adulto mayor**</Typography>
+      <Typography type="h3">6. Bienestar del adulto mayor</Typography>
       <Typography>
         Orientamos a familias y cuidadores para garantizar condiciones de vida
         dignas que favorezcan la salud física, mental, social y espiritual de
@@ -123,15 +121,15 @@ export default function MisionContent() {
       </Typography>
 
       <Typography type="h3">
-        8. Alianzas estratégicas y sostenibilidad**
+        8. Alianzas estratégicas y sostenibilidad
       </Typography>
       <Typography>
         Gestionamos convenios con entidades públicas y privadas (municipales,
         departamentales, nacionales e internacionales) para impulsar proyectos
         alineados con los planes de desarrollo y políticas públicas. Contamos
         con un equipo humano altamente calificado y voluntarios comprometidos,
-        garantizando calidad en el servicio interno y externo, bajo el lema del
-        **respeto** como bandera institucional.
+        garantizando calidad en el servicio interno y externo, bajo el lema del{" "}
+        <strong>respeto</strong> como bandera institucional.
       </Typography>
 
       <Icons2 />
@@ -146,7 +144,7 @@ export default function MisionContent() {
       </Typography>
 
       <Typography type="h3">Nuestros horizontes:</Typography>
-      <Typography>A corto y mediano plazo (5 años)</Typography>
+      <Typography>A corto y mediano plazo</Typography>
       <Typography>
         Consolidarnos como referente departamental en atención integral de la
         salud mental, ofreciendo:
@@ -173,7 +171,7 @@ export default function MisionContent() {
         </li>
       </ul>
 
-      <Typography>A largo plazo (10 años)</Typography>
+      <Typography>A largo plazo</Typography>
       <Typography>
         Proyectarnos a nivel nacional e internacional como un modelo de
         intervención efectivo, reconocido por:
@@ -210,6 +208,8 @@ export default function MisionContent() {
         cada día para construirlo.
       </Typography>
 
+      <br />
+
       <Typography type="h4">Nuestro compromiso final</Typography>
       <Typography>
         Disminuir significativamente las cifras de suicidio e intentos de
@@ -220,9 +220,13 @@ export default function MisionContent() {
         accesible para todos.
       </Typography>
 
-      <Typography type="h4">
-        Juntos, cuidamos lo que más importa: la vida.
-      </Typography>
+      <div className="my-10 flex flex-col items-center gap-3">
+        <h6 className="text-center text-lg font-medium tracking-tight text-zinc-200 md:text-xl">
+          Juntos, cuidamos lo que más importa:
+          <span className="text-purple-300"> la vida</span> y{" "}
+          <span className="text-purple-300">el bienestar</span>.
+        </h6>
+      </div>
     </>
   );
 }

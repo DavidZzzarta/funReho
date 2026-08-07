@@ -89,7 +89,7 @@ export function Tour() {
                 <br />
                 <br />
                 <Link
-                  className={clsx("text-pink-500", "underline")}
+                  className={clsx("text-pink-400", "underline")}
                   href="/recorrido"
                 >
                   Ver nuestra trayectoria completa

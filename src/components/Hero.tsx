@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { Button } from "@heroui/react";
 
 function Contenido() {
   return (
@@ -29,7 +28,7 @@ function Contenido() {
           "text-3xl",
         )}
       >
-        Trabajamos para disminuir las cifras de suicidios
+        Trabajamos para que las familias no se sientan solas
       </h1>
       <p className={clsx("leading-normal", "text-xl", "mb-2", "md:text-2xl")}>
         Con un recorrido desde{" "}
@@ -44,11 +43,9 @@ function Contenido() {
         </strong>
       </p>
 
-      <p className={clsx("text-xs", "my-4")}>
+      <p className={clsx("my-4")}>
         Si repararamos familias, reparamos la sociedad
       </p>
-
-      <Button size="lg">Conoce más</Button>
     </div>
   );
 }
@@ -56,21 +53,37 @@ function Contenido() {
 function Image() {
   return (
     <div className={clsx("w-full", "md:w-3/5", "py-6", "text-center")}>
-      <img className={clsx("w-full", "md:w-4/5", "z-50")} src="/hero2.png" />
+      <img
+        className={clsx("w-full", "md:w-4/5", "z-50")}
+        draggable={false}
+        src="/hero2.png"
+      />
     </div>
   );
 }
 
 function BgKids() {
   return (
-    <div className={clsx("absolute", "top-0", "left-0", "w-full", "h-full")}>
+    <div
+      className={clsx(
+        "absolute",
+        "top-0",
+        "left-0",
+        "w-full",
+        "h-full",
+        "pointer-events-none",
+      )}
+    >
       <img
         className={clsx(
+          "select-none",
+          "-z-[30]",
           "w-full h-full",
           "object-contain object-bottom", // Por defecto: En celulares se encoge para mostrarse completa
           "md:object-cover md:object-bottom", // En tablets y computadoras: Se expande cubriendo el fondo
         )}
         src="/bg-kids.png"
+        draggable={false}
       />
     </div>
   );
