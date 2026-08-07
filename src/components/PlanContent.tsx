@@ -21,6 +21,26 @@ function Enlace() {
 export default function PlanContent() {
   return (
     <>
+      <div
+        className={clsx(
+          "my-4",
+          "text-sm", // ¡Corregido aquí!
+          "leading-tight",
+          "flex",
+          "justify-end",
+        )}
+      >
+        Autora del proyecto{" "}
+        <a
+          className="text-purple-300 hover:underline"
+          href="https://www.instagram.com/psicologo.alejandro.lopez/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Yenni Zarta
+        </a>
+      </div>
+
       <Typography type="h3">Origen y propósito</Typography>
       <Separator />
       <Typography>

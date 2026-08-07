@@ -18,8 +18,13 @@ function Titles() {
       >
         Proyecto
       </h2>
+      <img
+        className="w-[17rem] h-[7rem] mx-auto"
+        src="/hojas.png"
+        alt="Visión"
+      />
 
-      <div className="text-center">
+      <div>
         <h2
           className={clsx(
             "my-2",
@@ -30,6 +35,7 @@ function Titles() {
             "from-emerald-700", // Verde más oscuro para contrastar con fondos claros
             "to-yellow-400", // Amarillo puro muy brillante
             "bg-clip-text",
+            "text-center",
             "text-transparent", // ¡Corregido! Ahora sí aplica el gradiente
           )}
         >
@@ -43,6 +49,7 @@ function Titles() {
             "leading-tight",
             "max-w-2xl",
             "mx-auto",
+            "text-center",
           )}
         >
           Transformando vidas a través del amor y el conocimiento
