@@ -32,8 +32,8 @@ export default function PlanContent() {
       >
         Autora del proyecto{" "}
         <a
-          className="text-purple-300 hover:underline"
-          href="https://www.instagram.com/psicologo.alejandro.lopez/"
+          className="ml-1 text-purple-300 hover:underline"
+          href="https://yennipaolazarta.online"
           target="_blank"
           rel="noopener noreferrer"
         >
