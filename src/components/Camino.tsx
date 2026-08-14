@@ -172,6 +172,70 @@ export function Camino() {
           />
         </div>
       </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec7.webp"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec8.jpg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec9.jpg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec10.jpg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
     </div>
   );
 }
