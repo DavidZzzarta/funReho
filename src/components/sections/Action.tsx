@@ -46,15 +46,25 @@ export function FormasDeAyudar() {
 
 function Contenido() {
   return (
-    <section className={clsx("container", "mx-auto", "text-center", "my-36")}>
+    <section
+      className={clsx(
+        "container",
+        "text-center",
+        "my-36",
+        "max-w-[240px]",
+        "md:max-w-3xl",
+        "mx-auto",
+      )}
+    >
       <h2
         className={clsx(
           "w-full",
           "my-2",
-          "text-5xl",
+          "text-3xl",
           "font-bold",
           "leading-tight",
           "text-center",
+          "md:text-5xl",
         )}
       >
         ¡Todos podemos aportar!

@@ -86,7 +86,7 @@ function Cards() {
 "
         imgUrl="/a1.png"
       >
-        <LinkHeroUI>
+        <LinkHeroUI href="/mision">
           Ver más
           <LinkHeroUI.Icon />
         </LinkHeroUI>
@@ -98,7 +98,7 @@ function Cards() {
         descripcion="Desde 2014, llevamos apoyo y ayuda de manera voluntaria a niños, familias y personas que lo necesitan, extendiendo nuestra labor desde Ibagué, Sibaté y Bogotá."
         imgUrl="/a3.png"
       >
-        <LinkHeroUI>
+        <LinkHeroUI href="/recorrido">
           Ver más
           <LinkHeroUI.Icon />
         </LinkHeroUI>

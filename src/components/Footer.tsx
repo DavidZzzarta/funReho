@@ -24,8 +24,12 @@ export function Footer() {
                 Fundación Rehobot
               </h2>
               <p className={clsx("mt-3")}>
-                Transformando vidas a través de la educación, el apoyo social y
-                el desarrollo comunitario.
+                Transformando{" "}
+                <span className="bg-gradient-to-r from-rose-500 to-cyan-400 bg-clip-text text-transparent font-bold">
+                  vidas
+                </span>{" "}
+                a través de la educación, el apoyo social y el desarrollo
+                comunitario.
               </p>
             </div>
 
@@ -68,9 +72,9 @@ export function Footer() {
             </h3>
 
             <ul className="space-y-2">
-              <li>Email: rehobothfruc@gmail.com</li>
+              <li>Correo: rehobothfruc@gmail.com</li>
               <li>Tel: +57 323 6410 946</li>
-              <li>Bogotá, Colombia</li>
+              <li>Bogotá D.C., Colombia</li>
             </ul>
           </div>
         </div>

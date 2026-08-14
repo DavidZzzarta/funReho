@@ -20,7 +20,7 @@ export default function ProjectsDropdown() {
         >
           <Dropdown.Item id="open-file" textValue="Open file">
             <div className="flex h-8 items-start justify-center pt-px">
-              <BicepsFlexed size={24} className="shrink-0 text-muted" />
+              <BicepsFlexed size={24} className="shrink-0 text-muted " />
             </div>
             <div className="flex flex-col">
               <Label>Cuidando tu salud mental</Label>

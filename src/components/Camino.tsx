@@ -78,6 +78,68 @@ export function Camino() {
           />
         </div>
       </Fecha>
+      <Fecha
+        fecha="27 de Agosto del 2018"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Hicimos charlas en diferentes colegios de Soacha sobre la importancia de la salud mental.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec.jpeg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+      <Fecha
+        fecha="27 de Agosto del 2014"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Dimos regalos a ninos de Sibate Cundinamarca en apoyo al bienestar y la infancia de los ninos
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec2.jpeg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec3.jpeg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
+
+      <Fecha
+        fecha="27 de Agosto del 2022"
+        descripcion="Ayudas comunitarias"
+        contenido="
+                Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
+                "
+      >
+        <div className={clsx("w-full", "p-6")}>
+          <img
+            src="/rec4.jpeg"
+            alt="Icono"
+            className={clsx("w-6/6", "sm:h-64", "mx-auto", "rounded-4xl")}
+          />
+        </div>
+      </Fecha>
     </div>
   );
 }
