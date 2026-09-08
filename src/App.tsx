@@ -3,6 +3,7 @@ import { Home } from "./pages/Home";
 import { Mision } from "./pages/Mision";
 import { Recorrido } from "./pages/Recorrido";
 import { Plan } from "./pages/Plan";
+import { Qr } from "./pages/Qr";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/mision" component={Mision} />
         <Route path="/recorrido" component={Recorrido} />
         <Route path="/plan" component={Plan} />
+        <Route path="/qr" component={Qr} />
 
         {/* Default route in a switch */}
         <Route>404: No such page!</Route>
