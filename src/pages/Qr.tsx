@@ -115,10 +115,12 @@ export function SubHero({
 
 export function CutomCard({
   title,
+  img,
   children,
 }: {
   title: string;
   children: ReactNode;
+  img: string;
 }) {
   return (
     <Card className="w-4xl items-stretch md:flex-row " variant="transparent">
@@ -127,7 +129,7 @@ export function CutomCard({
           alt="Cherries"
           className="pointer-events-none absolute inset-0 h-full w-full scale-105 object-cover select-none"
           loading="lazy"
-          src="/hand.png"
+          src={img}
         />
       </div>
       <div className="flex flex-1 flex-col gap-3">
@@ -151,7 +153,7 @@ export function CutomCard({
 function Page() {
   return (
     <div className="flex flex-col items-center justify-center gap-8 max-w-auto pb-16">
-      <CutomCard title="Entendiendo la depresión">
+      <CutomCard title="Entendiendo la depresión" img="d1.jpeg">
         <Card.Description>
           Vivir con depresión y ansiedad es posible, pero no se hace solo. No
           con frases hechas ni consejos que no entienden el dolor. Se hace con
@@ -167,7 +169,7 @@ function Page() {
         </Card.Description>
       </CutomCard>
 
-      <CutomCard title="Guia para la prevención del suicidio">
+      <CutomCard title="Guia para la prevención del suicidio" img="d2.jpeg">
         <Card.Description>
           El suicidio es un problema de salud pública alarmante en todo el
           mundo. En Argentina es la principal causa de muerte entre jóvenes de
@@ -182,6 +184,40 @@ function Page() {
           suicidan. La depresión y la ideación suicida no distinguen edad. Un
           niño de 10, 12 o 15 años puede estar sufriendo en silencio sin que
           nadie lo note. Por eso es fundamental aprender a leer sus señales.
+        </Card.Description>
+      </CutomCard>
+
+      <CutomCard title="Red de apoyo integral" img="d3.jpeg">
+        <Card.Description>
+          La prevención sin acción se queda en palabras. Por eso, desde la
+          Fundación Rehobot diseñamos un plan de acción que brinda
+          acompañamiento real y sostenido a familias que luchan por sobrevivir.
+          <br />
+          <br />
+          No solo entregamos herramientas para enfrentar la crisis: también
+          ofrecemos apoyo económico para tratamientos y medicamentos, y apoyo en
+          especie como alimentos, ropa y otros insumos básicos.
+          <br />
+          <br />
+          Tú puedes ser parte de esta red:
+          <br />
+          <ul className="list-disc list-inside">
+            <li>
+              Voluntario profesional de la salud mental: dona tu tiempo para
+              atención en crisis o tratamiento.
+            </li>
+            <li>
+              Padrino o madrina: costea el tratamiento de una persona que no
+              puede pagarlo.
+            </li>
+            <li>
+              Donante en especie: entrega alimentos, ropa o lo que esté a tu
+              alcance.
+            </li>
+          </ul>
+          <br />
+          Toda la información para unirte está aquí. Únete a esta red de apoyo
+          integral. Juntos podemos salvar vidas.
         </Card.Description>
       </CutomCard>
     </div>
