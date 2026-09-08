@@ -1,3 +1,4 @@
+import { Link } from "@heroui/react";
 import clsx from "clsx";
 
 function Punto() {
@@ -36,6 +37,17 @@ function Fecha({
           <p className="mt-2 text-default-600">{descripcion}</p>
 
           <p className="mt-6 text-sm">{contenido}</p>
+
+          <br />
+
+          <Link
+            href="https://www.youtube.com/watch?v=BdZIbuOmtbg"
+            rel="noopener noreferer"
+            target="_blank"
+          >
+            Ver en Youtube
+            <Link.Icon />
+          </Link>
         </div>
 
         <div className="flex-shrink-0">{children}</div>
@@ -99,8 +111,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Mayo del 2016"
-        descripcion="Ayudas comunitarias"
+        fecha="Mayo del 2022"
+        descripcion="Charlas en colegios"
         contenido="
                 Agradecemos a los colegios que nos abrieron sus puertas para compartir con alumnos, profesores y padres la importancia de conocer cómo funciona el cerebro. Brindamos a los estudiantes hábitos saludables, así como herramientas de prevención y acción, para que cuiden su salud mental y aprendan a pedir ayuda cuando la necesiten.
                 "
@@ -114,8 +126,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
         </div>
       </Fecha>
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Junio del 2022"
+        descripcion="Charlas en colegios"
         contenido="
                 Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
                 "
@@ -129,8 +141,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
         </div>
       </Fecha>
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Agosto del 2022"
+        descripcion="Charlas grupales"
         contenido='
                 En el municipio de Soacha, el proyecto "Cuidando tu salud mental" fue muy bien recibido. Trabajamos junto a psicólogos, trabajadores sociales y la Policía de Infancia y Adolescencia en charlas sobre el cuidado de la salud mental, con el fin de estar atentos a las señales de alarma ante posibles intentos de suicidio, especialmente dado el aumento de estos casos en la población adolescente
                  '
@@ -145,8 +157,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Agosto del 2022"
+        descripcion="Charlas grupales"
         contenido="
                 Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
                 "
@@ -161,7 +173,7 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
+        fecha="Agosto del 2022"
         descripcion="Ayudas comunitarias"
         contenido="
                 Visitamos colegios y barrios, donde entregamos información clave y escuchamos activamente a la comunidad, con el objetivo de construir una red de apoyo que salve vidas desde la prevención y la acción oportuna.
@@ -177,8 +189,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Agosto del 2022"
+        descripcion="Charlas en colegios"
         contenido="
                 Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
                 "
@@ -193,8 +205,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Febrero del 2024"
+        descripcion="Charlas comunitarias"
         contenido="
                 Fuimos convocados por diferentes comunidades para conversar sobre salud mental, en articulación con la Alcaldía de Soacha, con el fin de activar protocolos de emergencia en casos de intento de suicidio. La preparación y la respuesta oportuna son asunto de todos. Agradecemos a quienes están dispuestos a aprender juntos a cuidarnos, a estar atentos y a actuar con empatía, porque así construimos redes que salvan vidas.
                 "
@@ -209,8 +221,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Febrero del 2024"
+        descripcion="Charlas comunitarias"
         contenido="
                 Padres de familia y cuidadores participan activamente en nuestros talleres, donde aprender es accesible y cercano. Los profesionales de salud mental les brindan información clara y estrategias prácticas en cuidado, autocuidado, prevención y acción. Estar preparados nos permite responder con mayor tranquilidad y efectividad ante una emergencia emocional en nuestro hogar o comunidad. Así, tejemos una red de apoyo sólida y comprometida con la protección de nuestros niños, niñas y adolescentes. Porque juntos, sin duda, podemos salvar vidas.
                 "
@@ -225,8 +237,8 @@ Nuestro enfoque en la niñez es preventivo. En un ambiente cultural y deportivo,
       </Fecha>
 
       <Fecha
-        fecha="Agosto del 2020"
-        descripcion="Ayudas comunitarias"
+        fecha="Febrero del 2024"
+        descripcion="Charlas comunitarias"
         contenido="
                 Recorrimos los colegios de Soacha brindando charlas sobre la importancia de la salud mental. A través de actividades didácticas y dinámicas participativas, buscamos generar conciencia, derribar estigmas y demostrar que cuidar la salud mental es fundamental para el bienestar y el desarrollo de cada persona.
                 "
