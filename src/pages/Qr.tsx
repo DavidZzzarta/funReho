@@ -1,7 +1,7 @@
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 
-import { Card } from "@heroui/react";
+import { Card, Link } from "@heroui/react";
 
 import clsx from "clsx";
 import { type ReactNode } from "react";
@@ -121,10 +121,12 @@ export function CutomCard({
   title,
   img,
   children,
+  pdf,
 }: {
   title: string;
   children: ReactNode;
   img: string;
+  pdf?: string;
 }) {
   return (
     <Card
@@ -147,9 +149,10 @@ export function CutomCard({
         </Card.Header>
         <Card.Footer className="mt-auto flex w-full flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col">
-            <span className="text-xs sm:text-sm font-medium text-foreground">
-              Ir al sitio
-            </span>
+            <Link href={pdf}>
+                            Ver pdf
+                            <Link.Icon />
+                          </Link>
           </div>
         </Card.Footer>
       </div>
@@ -160,7 +163,7 @@ export function CutomCard({
 function Page() {
   return (
     <div className="flex flex-col items-center justify-center gap-8 w-full max-w-4xl mx-auto px-4 pb-16">
-      <CutomCard title="Entendiendo la depresión" img="d1.jpeg">
+      <CutomCard title="Entendiendo la depresión" img="d1.jpeg" pdf="/guia/Entendiendo la depresion.pdf">
         <Card.Description>
           Vivir con depresión y ansiedad es posible, pero no se hace solo. No
           con frases hechas ni consejos que no entienden el dolor. Se hace con
@@ -176,7 +179,7 @@ function Page() {
         </Card.Description>
       </CutomCard>
 
-      <CutomCard title="Guia para la prevención del suicidio" img="d2.jpeg">
+      <CutomCard title="Guia para la prevención del suicidio" img="d2.jpeg" pdf="/guia/Auxilios emocionales.pdf">
         <Card.Description>
           El suicidio es un problema de salud pública alarmante en todo el
           mundo. En Argentina es la principal causa de muerte entre jóvenes de
@@ -194,7 +197,7 @@ function Page() {
         </Card.Description>
       </CutomCard>
 
-      <CutomCard title="Red de apoyo integral" img="d3.jpeg">
+      <CutomCard title="Red de apoyo integral" img="d3.jpeg" pdf="/guia/Red.pdf">
         <Card.Description>
           La prevención sin acción se queda en palabras. Por eso, desde la
           Fundación Rehobot diseñamos un plan de acción que brinda
