@@ -77,12 +77,16 @@ export function SubHero({
           "z-10",
         )}
       >
-        <img className="select-none w-22 mx-auto mt-24" src="/lazo.png" />
+        <img
+          className="select-none w-16 sm:w-22 mx-auto mt-16 sm:mt-24"
+          src="/lazo.png"
+        />
         <h2
           className={clsx(
             "w-full",
             "my-2",
-            "text-5xl",
+            "text-3xl",
+            "sm:text-5xl",
             "font-bold",
             "leading-tight",
             "text-center",
@@ -105,7 +109,7 @@ export function SubHero({
             )}
           ></div>
         </div>
-        <h3 className={clsx("my-4", "text-3xl", "leading-tight")}>
+        <h3 className={clsx("my-4", "text-xl", "sm:text-3xl", "leading-tight")}>
           {subtitle}
         </h3>
       </section>
@@ -123,8 +127,11 @@ export function CutomCard({
   img: string;
 }) {
   return (
-    <Card className="w-4xl items-stretch md:flex-row " variant="transparent">
-      <div className="relative h-[140px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[120px] sm:w-[120px]">
+    <Card
+      className="w-full max-w-4xl items-stretch md:flex-row p-2 sm:p-4"
+      variant="transparent"
+    >
+      <div className="relative h-[100px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[120px] sm:w-[120px]">
         <img
           alt="Cherries"
           className="pointer-events-none absolute inset-0 h-full w-full scale-105 object-cover select-none"
@@ -140,7 +147,7 @@ export function CutomCard({
         </Card.Header>
         <Card.Footer className="mt-auto flex w-full flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex flex-col">
-            <span className="text-sm font-medium text-foreground">
+            <span className="text-xs sm:text-sm font-medium text-foreground">
               Ir al sitio
             </span>
           </div>
@@ -152,7 +159,7 @@ export function CutomCard({
 
 function Page() {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 max-w-auto pb-16">
+    <div className="flex flex-col items-center justify-center gap-8 w-full max-w-4xl mx-auto px-4 pb-16">
       <CutomCard title="Entendiendo la depresión" img="d1.jpeg">
         <Card.Description>
           Vivir con depresión y ansiedad es posible, pero no se hace solo. No
